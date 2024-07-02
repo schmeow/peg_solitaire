@@ -10,14 +10,3726 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[       821,         34]
-NotebookOptionsPosition[       564,         21]
-NotebookOutlinePosition[       964,         37]
-CellTagsIndexPosition[       921,         34]
+NotebookDataLength[    166990,       3852]
+NotebookOptionsPosition[    160447,       3733]
+NotebookOutlinePosition[    160847,       3749]
+CellTagsIndexPosition[    160804,       3746]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"indexMapT", "=", 
+     RowBox[{"MapIndexed", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"#1", "->", 
+         RowBox[{"#2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "&"}], ",", 
+       RowBox[{"VertexList", "[", "\n", 
+        RowBox[{"VertexDelete", "[", 
+         RowBox[{
+          RowBox[{"NearestNeighborGraph", "[", 
+           RowBox[{"Position", "[", "\n", 
+            RowBox[{
+             RowBox[{"Array", "[", 
+              RowBox[{
+               RowBox[{"1", "&"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"3", ",", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}], 
+           "]"}], ",", "\n", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "2"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "2"}], "}"}]}], "}"}]}], "]"}], "]"}]}], 
+      "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"SimplePegGameGraph1", "=", 
+       RowBox[{
+        InterpretationBox[
+         TagBox[
+          FrameBox[
+           PaneBox[GridBox[{
+              {
+               StyleBox[
+                StyleBox[
+                 AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                  BoxBaselineShift->-0.25,
+                  BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                 FontColor->GrayLevel[0.45]],
+                ShowStringCharacters->False,
+                FontFamily->"Source Sans Pro Black",
+                FontSize->0.65 Inherited,
+                FontWeight->"Heavy",
+                PrivateFontOptions->{"OperatorSubstitution"->False}], 
+               StyleBox[
+                RowBox[{
+                 StyleBox["\<\"NestWhileGraph\"\>", "ResourceFunctionLabel"], 
+                 " "}],
+                ShowAutoStyles->False,
+                ShowStringCharacters->False,
+                FontSize->0.9 Inherited,
+                FontColor->GrayLevel[0.1]]}
+             },
+             GridBoxSpacings->{"Columns" -> {{0.25}}}],
+            Alignment->Left,
+            BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+            BaselinePosition->Baseline,
+            FrameMargins->{{3, 0}, {0, 0}}],
+           Background->RGBColor[0.968627, 0.976471, 0.984314],
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->{},
+           FrameMargins->{{0, 0}, {1, 1}},
+           FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+           RoundingRadius->4],
+          {"FunctionResourceBox", 
+           GrayLevel[0.45], "\"NestWhileGraph\""},
+          TagBoxNote->"FunctionResourceBox"],
+         ResourceFunction[
+          
+          ResourceObject[<|
+           "Name" -> "NestWhileGraph", "UUID" -> 
+            "08dc5bfc-01f7-414e-8f54-fbbb743d54c0", "ResourceType" -> 
+            "Function", "ResourceLocations" -> {
+              CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0"]}, "Version" -> None, 
+            "DocumentationLink" -> 
+            URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/NestWhileGraph"], "ExampleNotebookData" -> Automatic, 
+            "FunctionLocation" -> 
+            CloudObject[
+             "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0/download/DefinitionData"], "ShortName" -> 
+            "NestWhileGraph", "SymbolName" -> 
+            "FunctionRepository`$08dc5bfc01f7414e8f54fbbb743d54c0`\
+NestWhileGraph"|>]],
+         Selectable->False], "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          InterpretationBox[
+           TagBox[
+            FrameBox[
+             PaneBox[GridBox[{
+                {
+                 StyleBox[
+                  StyleBox[
+                   AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                   FontColor->GrayLevel[0.45]],
+                  ShowStringCharacters->False,
+                  FontFamily->"Source Sans Pro Black",
+                  FontSize->0.65 Inherited,
+                  FontWeight->"Heavy",
+                  PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                 StyleBox[
+                  RowBox[{
+                   StyleBox["\<\"IterateTPSMove\"\>", "ResourceFunctionLabel"],
+                    " "}],
+                  ShowAutoStyles->False,
+                  ShowStringCharacters->False,
+                  FontSize->0.9 Inherited,
+                  FontColor->GrayLevel[0.1]]}
+               },
+               GridBoxSpacings->{"Columns" -> {{0.25}}}],
+              Alignment->Left,
+              BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+              BaselinePosition->Baseline,
+              FrameMargins->{{3, 0}, {0, 0}}],
+             Background->RGBColor[0.968627, 0.976471, 0.984314],
+             BaselinePosition->Baseline,
+             DefaultBaseStyle->{},
+             FrameMargins->{{0, 0}, {1, 1}},
+             FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+             RoundingRadius->4],
+            {"FunctionResourceBox", 
+             GrayLevel[0.45], "\"IterateTPSMove\""},
+            TagBoxNote->"FunctionResourceBox"],
+           ResourceFunction[
+            
+            ResourceObject[<|
+             "Name" -> "IterateTPSMove", "UUID" -> 
+              "5930db64-062b-4390-8fae-69e149e6d28a", "ResourceType" -> 
+              "Function", "ResourceLocations" -> {
+                CloudObject[
+                "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+593/5930db64-062b-4390-8fae-69e149e6d28a"]}, "Version" -> None, 
+              "DocumentationLink" -> 
+              URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/IterateTPSMove"], "ExampleNotebookData" -> Automatic, 
+              "FunctionLocation" -> 
+              CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/593/\
+5930db64-062b-4390-8fae-69e149e6d28a/download/DefinitionData"], "ShortName" -> 
+              "IterateTPSMove", "SymbolName" -> 
+              "FunctionRepository`$5930db64062b43908fae69e149e6d28a`\
+IterateTPSMove"|>]],
+           Selectable->False], "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "4", ",", "5"}], "}"}]}], "}"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"ReplacePart", "[", 
+           RowBox[{
+            RowBox[{"Table", "[", 
+             RowBox[{"1", ",", 
+              RowBox[{"{", "5", "}"}]}], "]"}], ",", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"3", ",", "3"}], "}"}], "/.", "indexMapT"}], ")"}], "->",
+              "0"}]}], "]"}], "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"UnsameQ", "@@", "#"}], "&"}], ",", "2", ",", 
+         RowBox[{"AspectRatio", "->", 
+          RowBox[{"1", "/", "2"}]}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"Graph", "[", 
+      RowBox[{"SimplePegGameGraph1", ",", "\[IndentingNewLine]", 
+       RowBox[{"VertexShapeFunction", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Inset", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              InterpretationBox[
+               TagBox[
+                FrameBox[
+                 PaneBox[GridBox[{
+                    {
+                    StyleBox[
+                    StyleBox[
+                    AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                    FontColor->GrayLevel[0.45]],
+                    ShowStringCharacters->False,
+                    FontFamily->"Source Sans Pro Black",
+                    FontSize->0.65 Inherited,
+                    FontWeight->"Heavy",
+                    PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                    StyleBox[
+                    RowBox[{
+                    
+                    StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                    "ResourceFunctionLabel"], " "}],
+                    ShowAutoStyles->False,
+                    ShowStringCharacters->False,
+                    FontSize->0.9 Inherited,
+                    FontColor->GrayLevel[0.1]]}
+                   },
+                   GridBoxSpacings->{"Columns" -> {{0.25}}}],
+                  Alignment->Left,
+                  BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+                  BaselinePosition->Baseline,
+                  FrameMargins->{{3, 0}, {0, 0}}],
+                 Background->RGBColor[0.968627, 0.976471, 0.984314],
+                 BaselinePosition->Baseline,
+                 DefaultBaseStyle->{},
+                 FrameMargins->{{0, 0}, {1, 1}},
+                 FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+                 RoundingRadius->4],
+                {"FunctionResourceBox", 
+                 GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+                TagBoxNote->"FunctionResourceBox"],
+               ResourceFunction[
+                
+                ResourceObject[<|
+                 "Name" -> "PegSolitaireGraphics", "UUID" -> 
+                  "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+                  "Function", "ResourceLocations" -> {
+                    CloudObject[
+                    "https://www.wolframcloud.com/obj/wolframphysics/\
+Resources/490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+                  "DocumentationLink" -> 
+                  URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+                  "FunctionLocation" -> 
+                  CloudObject[
+                   "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+490/490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], 
+                  "ShortName" -> "PegSolitaireGraphics", "SymbolName" -> 
+                  "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+               Selectable->False], "[", "indexMapT", "]"}], "[", 
+             "\[IndentingNewLine]", "#2", "]"}], ",", "#1", ",", "Center", 
+            ",", "#3"}], "]"}], "&"}], ")"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"VertexSize", "\[Rule]", "1"}], ",", 
+       RowBox[{"PerformanceGoal", "->", "\"\<Quality\>\""}], ",", 
+       RowBox[{"EdgeStyle", "\[Rule]", "Gray"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"VertexCoordinates", "\[Rule]", 
+        RowBox[{"MapIndexed", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#1", "->", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"4", 
+               RowBox[{"#2", "[", 
+                RowBox[{"[", "1", "]"}], "]"}]}], ",", "0"}], "}"}]}], "&"}], 
+          ",", "\[IndentingNewLine]", 
+          RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}], "]"}]}]}], 
+      "]"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.928846280078013*^9, 3.928846281871369*^9}, 
+   3.928846462475297*^9},
+ CellLabel->
+  "In[450]:=",ExpressionUUID->"8eb78e77-9fb9-41e8-8265-ca571dcaa60b"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 1, 1, 1, 0}, {0, 1, 1, 0, 1}, {0, 0, 0, 1, 1}, {1, 0, 0, 0, 
+      0}}, {{{1, 2}, {2, 3}, {3, 4}}, Null}, {
+      AspectRatio -> Rational[1, 2], EdgeStyle -> {
+         GrayLevel[0.5]}, GraphLayout -> {"Dimension" -> 2}, PerformanceGoal -> 
+       "Quality", VertexCoordinates -> {{4, 0}, {8, 0}, {12, 0}, {16, 0}}, 
+       VertexShapeFunction -> {Inset[
+          ResourceFunction[
+           
+           ResourceObject[<|
+            "Name" -> "PegSolitaireGraphics", "UUID" -> 
+             "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+             "Function", "ResourceLocations" -> {
+               CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+             "DocumentationLink" -> 
+             URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+             "FunctionLocation" -> 
+             CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+             "PegSolitaireGraphics", "SymbolName" -> 
+             "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]][{{1, 3} -> 1, {2, 1} -> 2, {2, 2} -> 3, {2, 3} -> 
+            4, {3, 3} -> 5}][#2], #, Center, #3]& }, VertexSize -> {1}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {GrayLevel[0.5], Opacity[0.7], Arrowheads[Medium], 
+        ArrowBox[{{
+          DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+           "VertexID$2", Automatic, Center]}, {
+          DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+           "VertexID$3", Automatic, Center]}, {
+          DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+           "VertexID$4", Automatic, Center]}}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {4., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {8., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {12., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {16., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$4"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.928846269304739*^9, 3.928846275871847*^9}, 
+   3.928846465300069*^9, 3.9288570519186897`*^9},
+ CellLabel->
+  "Out[450]=",ExpressionUUID->"c57b34ae-67cd-4dae-aec7-67ca09204a14"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"indexMapT", "=", 
+  RowBox[{"MapIndexed", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#1", "->", 
+      RowBox[{"#2", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], "&"}], ",", 
+    RowBox[{"VertexList", "[", "\n", 
+     RowBox[{"VertexDelete", "[", 
+      RowBox[{
+       RowBox[{"NearestNeighborGraph", "[", 
+        RowBox[{"Position", "[", "\n", 
+         RowBox[{
+          RowBox[{"Array", "[", 
+           RowBox[{
+            RowBox[{"1", "&"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}], 
+        "]"}], ",", "\n", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "2"}], "}"}]}], "}"}]}], "]"}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9288466387694187`*^9, 3.928846640732389*^9}, {
+   3.9288466763311996`*^9, 3.928846678512919*^9}, 3.928849472761737*^9},
+ CellLabel->
+  "In[260]:=",ExpressionUUID->"fbf84cfc-9bb5-4407-affc-dbb251454108"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.92884662644917*^9, 3.928846641002689*^9}, 
+   3.9288494732226973`*^9},
+ CellLabel->
+  "Out[260]=",ExpressionUUID->"85196c89-6176-4885-a43a-e8b6f7b85f4e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexDelete", "[", 
+  RowBox[{
+   RowBox[{"NearestNeighborGraph", "[", 
+    RowBox[{"Position", "[", "\n", 
+     RowBox[{
+      RowBox[{"Array", "[", 
+       RowBox[{
+        RowBox[{"1", "&"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"3", ",", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}], "]"}], 
+   ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "2"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.928846722016745*^9, 3.928846724308898*^9}, {
+  3.9288467724995317`*^9, 3.9288467844955177`*^9}, {3.928847309547967*^9, 
+  3.928847318056069*^9}},
+ CellLabel->
+  "In[145]:=",ExpressionUUID->"cd161f98-a78a-40cf-9baf-cac53b9afe97"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 3}, {2, 1}, {2, 2}, {2, 3}, {3, 3}}, {Null, 
+       SparseArray[
+       Automatic, {5, 5}, 0, {
+        1, {{0, 1, 2, 4, 7, 8}, {{4}, {3}, {2}, {4}, {1}, {3}, {5}, {4}}}, 
+         Pattern}]}, {
+      VertexCoordinates -> {{1., 3.}, {2., 1.}, {2., 2.}, {2., 3.}, {3., 
+        3.}}}]]}, 
+    TagBox[
+     GraphicsGroupBox[
+      GraphicsComplexBox[{{1., 3.}, {2., 1.}, {2., 2.}, {2., 3.}, {3., 
+       3.}}, {
+        {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[0.], 
+         ArrowBox[{{1, 4}, {2, 3}, {3, 4}, {4, 5}}, 0.02261146496815286]}, 
+        {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.02261146496815286], DiskBox[2, 0.02261146496815286], 
+         DiskBox[3, 0.02261146496815286], DiskBox[4, 0.02261146496815286], 
+         DiskBox[5, 0.02261146496815286]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.928846687473505*^9, 3.928846724647848*^9},
+ CellLabel->
+  "Out[145]=",ExpressionUUID->"7af38ac1-d6bf-434b-963d-d5262cb0dc49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SimplePegGameGraph1", "=", 
+  RowBox[{
+   InterpretationBox[
+    TagBox[
+     FrameBox[
+      PaneBox[GridBox[{
+         {
+          StyleBox[
+           StyleBox[
+            AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+             BoxBaselineShift->-0.25,
+             BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+            FontColor->GrayLevel[0.45]],
+           ShowStringCharacters->False,
+           FontFamily->"Source Sans Pro Black",
+           FontSize->0.65 Inherited,
+           FontWeight->"Heavy",
+           PrivateFontOptions->{"OperatorSubstitution"->False}], 
+          StyleBox[
+           RowBox[{
+            StyleBox["\<\"NestWhileGraph\"\>", "ResourceFunctionLabel"], " "}],
+           ShowAutoStyles->False,
+           ShowStringCharacters->False,
+           FontSize->0.9 Inherited,
+           FontColor->GrayLevel[0.1]]}
+        },
+        GridBoxSpacings->{"Columns" -> {{0.25}}}],
+       Alignment->Left,
+       BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+       BaselinePosition->Baseline,
+       FrameMargins->{{3, 0}, {0, 0}}],
+      Background->RGBColor[0.968627, 0.976471, 0.984314],
+      BaselinePosition->Baseline,
+      DefaultBaseStyle->{},
+      FrameMargins->{{0, 0}, {1, 1}},
+      FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+      RoundingRadius->4],
+     {"FunctionResourceBox", 
+      GrayLevel[0.45], "\"NestWhileGraph\""},
+     TagBoxNote->"FunctionResourceBox"],
+    ResourceFunction[
+     ResourceObject[<|
+      "Name" -> "NestWhileGraph", "UUID" -> 
+       "08dc5bfc-01f7-414e-8f54-fbbb743d54c0", "ResourceType" -> "Function", 
+       "ResourceLocations" -> {
+         CloudObject[
+         "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0"]}, "Version" -> None, 
+       "DocumentationLink" -> 
+       URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+NestWhileGraph"], "ExampleNotebookData" -> Automatic, "FunctionLocation" -> 
+       CloudObject[
+        "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0/download/DefinitionData"], "ShortName" -> 
+       "NestWhileGraph", "SymbolName" -> 
+       "FunctionRepository`$08dc5bfc01f7414e8f54fbbb743d54c0`NestWhileGraph"|>\
+]],
+    Selectable->False], "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     InterpretationBox[
+      TagBox[
+       FrameBox[
+        PaneBox[GridBox[{
+           {
+            StyleBox[
+             StyleBox[
+              AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+               BoxBaselineShift->-0.25,
+               BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+              FontColor->GrayLevel[0.45]],
+             ShowStringCharacters->False,
+             FontFamily->"Source Sans Pro Black",
+             FontSize->0.65 Inherited,
+             FontWeight->"Heavy",
+             PrivateFontOptions->{"OperatorSubstitution"->False}], 
+            StyleBox[
+             RowBox[{
+              StyleBox["\<\"IterateTPSMove\"\>", "ResourceFunctionLabel"], 
+              " "}],
+             ShowAutoStyles->False,
+             ShowStringCharacters->False,
+             FontSize->0.9 Inherited,
+             FontColor->GrayLevel[0.1]]}
+          },
+          GridBoxSpacings->{"Columns" -> {{0.25}}}],
+         Alignment->Left,
+         BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+         BaselinePosition->Baseline,
+         FrameMargins->{{3, 0}, {0, 0}}],
+        Background->RGBColor[0.968627, 0.976471, 0.984314],
+        BaselinePosition->Baseline,
+        DefaultBaseStyle->{},
+        FrameMargins->{{0, 0}, {1, 1}},
+        FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+        RoundingRadius->4],
+       {"FunctionResourceBox", 
+        GrayLevel[0.45], "\"IterateTPSMove\""},
+       TagBoxNote->"FunctionResourceBox"],
+      ResourceFunction[
+       ResourceObject[<|
+        "Name" -> "IterateTPSMove", "UUID" -> 
+         "5930db64-062b-4390-8fae-69e149e6d28a", "ResourceType" -> "Function",
+          "ResourceLocations" -> {
+           CloudObject[
+           "https://www.wolframcloud.com/obj/wolframphysics/Resources/593/\
+5930db64-062b-4390-8fae-69e149e6d28a"]}, "Version" -> None, 
+         "DocumentationLink" -> 
+         URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+IterateTPSMove"], "ExampleNotebookData" -> Automatic, "FunctionLocation" -> 
+         CloudObject[
+          "https://www.wolframcloud.com/obj/wolframphysics/Resources/593/\
+5930db64-062b-4390-8fae-69e149e6d28a/download/DefinitionData"], "ShortName" -> 
+         "IterateTPSMove", "SymbolName" -> 
+         "FunctionRepository`$5930db64062b43908fae69e149e6d28a`\
+IterateTPSMove"|>]],
+      Selectable->False], "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "4", ",", "5"}], "}"}]}], "}"}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"ReplacePart", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{"1", ",", 
+         RowBox[{"{", "5", "}"}]}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "3"}], "}"}], "/.", "indexMapT"}], ")"}], "->", 
+        "0"}]}], "]"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"UnsameQ", "@@", "#"}], "&"}], ",", "2", ",", 
+    RowBox[{"AspectRatio", "->", 
+     RowBox[{"1", "/", "2"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.928847641447782*^9, 3.928847644941176*^9}, {
+  3.928847680839776*^9, 3.9288476809287643`*^9}},
+ CellLabel->
+  "In[166]:=",ExpressionUUID->"de47ce56-c957-4d8c-a4a6-fa7c8d23a092"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 1, 1, 1, 0}, {0, 1, 1, 0, 1}, {0, 0, 0, 1, 1}, {1, 0, 0, 0, 
+      0}}, {{{1, 2}, {2, 3}, {3, 4}}, Null}, {
+      AspectRatio -> Rational[1, 2], GraphLayout -> {"Dimension" -> 2}}]]}, 
+    TagBox[
+     GraphicsGroupBox[
+      GraphicsComplexBox[{{0., 1.5000000000000002`}, {1., 1.2}, {2., 0.6}, {
+       3., 0.}}, {
+        {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[Medium], 
+         ArrowBox[{{1, 2}, {2, 3}, {3, 4}}, 0.030239520958083826`]}, 
+        {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.030239520958083826], DiskBox[2, 0.030239520958083826], 
+         DiskBox[3, 0.030239520958083826], 
+         DiskBox[4, 0.030239520958083826]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None,
+  ImageSize->{290.87890625, Automatic}]], "Output",
+ CellChangeTimes->{3.928847349885193*^9, 3.928848085239007*^9},
+ CellLabel->
+  "Out[166]=",ExpressionUUID->"388c893d-71f2-45fc-84c2-c9e94727d67a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"ReplacePart", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{"1", ",", 
+      RowBox[{"{", "5", "}"}]}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3", ",", "3"}], "}"}], "/.", "indexMapT"}], ")"}], "->", 
+     "0"}]}], "]"}], "}"}]], "Input",
+ CellLabel->
+  "In[295]:=",ExpressionUUID->"1b0d7f54-0e0e-4f31-a231-3d67cb55b5f4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.928851671548993*^9},
+ CellLabel->
+  "Out[295]=",ExpressionUUID->"11b86adb-b26a-4d72-94b1-9ffba9f38389"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    TagBox[
+     FrameBox[
+      PaneBox[GridBox[{
+         {
+          StyleBox[
+           StyleBox[
+            AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+             BoxBaselineShift->-0.25,
+             BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+            FontColor->GrayLevel[0.45]],
+           ShowStringCharacters->False,
+           FontFamily->"Source Sans Pro Black",
+           FontSize->0.65 Inherited,
+           FontWeight->"Heavy",
+           PrivateFontOptions->{"OperatorSubstitution"->False}], 
+          StyleBox[
+           RowBox[{
+            StyleBox["\<\"PegSolitaireGraphics\"\>", "ResourceFunctionLabel"],
+             " "}],
+           ShowAutoStyles->False,
+           ShowStringCharacters->False,
+           FontSize->0.9 Inherited,
+           FontColor->GrayLevel[0.1]]}
+        },
+        GridBoxSpacings->{"Columns" -> {{0.25}}}],
+       Alignment->Left,
+       BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+       BaselinePosition->Baseline,
+       FrameMargins->{{3, 0}, {0, 0}}],
+      Background->RGBColor[0.968627, 0.976471, 0.984314],
+      BaselinePosition->Baseline,
+      DefaultBaseStyle->{},
+      FrameMargins->{{0, 0}, {1, 1}},
+      FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+      RoundingRadius->4],
+     {"FunctionResourceBox", 
+      GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+     TagBoxNote->"FunctionResourceBox"],
+    ResourceFunction[
+     ResourceObject[<|
+      "Name" -> "PegSolitaireGraphics", "UUID" -> 
+       "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> "Function", 
+       "ResourceLocations" -> {
+         CloudObject[
+         "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+       "DocumentationLink" -> 
+       URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+       "FunctionLocation" -> 
+       CloudObject[
+        "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+       "PegSolitaireGraphics", "SymbolName" -> 
+       "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+    Selectable->False], "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}], "]"}], "[", 
+  
+  RowBox[{"{", 
+   RowBox[{"1", ",", "1", ",", "1", ",", "0", ",", "0"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9288516886535587`*^9, 3.92885170440876*^9}, {
+  3.928851752887339*^9, 3.9288517554650097`*^9}},
+ CellLabel->
+  "In[300]:=",ExpressionUUID->"33076960-ee2a-440d-95aa-bd092063b67f"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+    0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+    0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+    3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+    2.3333333333333335`}}, 
+    {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+     TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+      Annotation[#, "Geometry"]& ]}], {
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+     DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+    {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+     DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+  BaseStyle->Directive[
+    GrayLevel[0.93], 
+    EdgeForm[
+     Directive[
+      GrayLevel[1], 
+      AbsoluteThickness[1]]]]]], "Output",
+ CellChangeTimes->{{3.928851695402375*^9, 3.928851699602644*^9}, 
+   3.9288517741036053`*^9},
+ CellLabel->
+  "Out[300]=",ExpressionUUID->"502b60cb-d7b4-4ba0-b1e1-fef38105e4b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]], "Input",
+ CellLabel->
+  "In[462]:=",ExpressionUUID->"b811489f-98eb-4aeb-8186-58e6e03c922c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.928857665195115*^9},
+ CellLabel->
+  "Out[462]=",ExpressionUUID->"bdfc0bb2-cf28-443e-a651-6b5f23933da5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MapIndexed", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#1", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"4", 
+         RowBox[{"#2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ",", "0"}], "}"}]}], "&"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{3.928857653145482*^9},
+ CellLabel->
+  "In[461]:=",ExpressionUUID->"387ed41c-587d-4484-a453-04e7ef6e9c17"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"4", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"8", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"12", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"16", ",", "0"}], "}"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.928857653837921*^9},
+ CellLabel->
+  "Out[461]=",ExpressionUUID->"c7946c9d-da8f-4923-9595-7fadc24bbba9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"#2", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], " ", "&"}], "/@", " ", 
+  RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}]], "Input",
+ CellChangeTimes->{{3.9288577198405447`*^9, 3.928857816466477*^9}},
+ CellLabel->
+  "In[463]:=",ExpressionUUID->"21c40997-962d-47c8-8393-ae7be2a11939"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Function", "slotn", 
+   "\"Slot number \\!\\(\\*RowBox[{\\\"2\\\"}]\\) in \
+\\!\\(\\*RowBox[{RowBox[{\\\"#2\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"&\\\"}]\\) cannot be filled from \
+\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"#2\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\"&\\\
+\"}], \\\")\\\"}], \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \
+\\\",\\\", \\\"1\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \
+\\\"0\\\"}], \\\"}\\\"}], \\\"]\\\"}]\\).\"", 2, 463, 122, 
+   17561587947287279074, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.928857818060135*^9},
+ CellLabel->
+  "During evaluation of \
+In[463]:=",ExpressionUUID->"2af2184b-1934-4d7f-b7ec-4705c6aef0cf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Function", "slotn", 
+   "\"Slot number \\!\\(\\*RowBox[{\\\"2\\\"}]\\) in \
+\\!\\(\\*RowBox[{RowBox[{\\\"#2\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"&\\\"}]\\) cannot be filled from \
+\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"#2\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\"&\\\
+\"}], \\\")\\\"}], \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", \\\"1\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"1\\\"}], \\\"}\\\"}], \\\"]\\\"}]\\).\"", 2, 463, 123, 
+   17561587947287279074, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.928857818080687*^9},
+ CellLabel->
+  "During evaluation of \
+In[463]:=",ExpressionUUID->"342a2c43-db81-4adf-acb9-c9d17bd8aaa2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Function", "slotn", 
+   "\"Slot number \\!\\(\\*RowBox[{\\\"2\\\"}]\\) in \
+\\!\\(\\*RowBox[{RowBox[{\\\"#2\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\"&\\\"}]\\) cannot be filled from \
+\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"#2\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\"&\\\
+\"}], \\\")\\\"}], \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \
+\\\",\\\", \\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \\\"1\\\", \\\",\\\", \
+\\\"1\\\"}], \\\"}\\\"}], \\\"]\\\"}]\\).\"", 2, 463, 124, 
+   17561587947287279074, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.928857818083248*^9},
+ CellLabel->
+  "During evaluation of \
+In[463]:=",ExpressionUUID->"cbe0cc36-f760-4877-94e8-72f124b15735"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Function\\\", \
+\\\"::\\\", \\\"slotn\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"", 2, 463, 125, 17561587947287279074, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9288578180854473`*^9},
+ CellLabel->
+  "During evaluation of \
+In[463]:=",ExpressionUUID->"7f836574-1733-4a22-a5fe-07e366b92fa8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "2", ",", "2", ",", "2"}], "}"}]], "Output",
+ CellChangeTimes->{3.9288578180877333`*^9},
+ CellLabel->
+  "Out[463]=",ExpressionUUID->"33cdfa36-bbe8-425b-b7b6-e8ab79117c87"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["indexMapT"], "Input",
+ CellLabel->
+  "In[270]:=",ExpressionUUID->"e40d238d-f938-4f43-8147-ed7cf53ab249"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.928849703002812*^9},
+ CellLabel->
+  "Out[270]=",ExpressionUUID->"ae4664b7-bfaf-44c7-a5e2-42bdc685d50a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"indexMapCross", "=", 
+     RowBox[{"MapIndexed", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"#1", "->", 
+         RowBox[{"#2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "&"}], ",", 
+       RowBox[{"VertexList", "[", "\[IndentingNewLine]", 
+        RowBox[{"VertexDelete", "[", 
+         RowBox[{
+          RowBox[{"NearestNeighborGraph", "[", 
+           RowBox[{"Position", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Array", "[", 
+              RowBox[{
+               RowBox[{"1", "&"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"4", ",", "4"}], "}"}]}], "]"}], ",", "1"}], "]"}], 
+           "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "2"}], "}"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "4"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", "4"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"4", ",", "4"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"4", ",", "3"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "1"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"4", ",", "1"}], "}"}]}], "}"}]}], "]"}], "]"}]}], 
+      "]"}]}], "}"}], ",", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"SimplePegGameGraph2", "=", 
+       RowBox[{
+        InterpretationBox[
+         TagBox[
+          FrameBox[
+           PaneBox[GridBox[{
+              {
+               StyleBox[
+                StyleBox[
+                 AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                  BoxBaselineShift->-0.25,
+                  BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                 FontColor->GrayLevel[0.45]],
+                ShowStringCharacters->False,
+                FontFamily->"Source Sans Pro Black",
+                FontSize->0.65 Inherited,
+                FontWeight->"Heavy",
+                PrivateFontOptions->{"OperatorSubstitution"->False}], 
+               StyleBox[
+                RowBox[{
+                 StyleBox["\<\"NestWhileGraph\"\>", "ResourceFunctionLabel"], 
+                 " "}],
+                ShowAutoStyles->False,
+                ShowStringCharacters->False,
+                FontSize->0.9 Inherited,
+                FontColor->GrayLevel[0.1]]}
+             },
+             GridBoxSpacings->{"Columns" -> {{0.25}}}],
+            Alignment->Left,
+            BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+            BaselinePosition->Baseline,
+            FrameMargins->{{3, 0}, {0, 0}}],
+           Background->RGBColor[0.968627, 0.976471, 0.984314],
+           BaselinePosition->Baseline,
+           DefaultBaseStyle->{},
+           FrameMargins->{{0, 0}, {1, 1}},
+           FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+           RoundingRadius->4],
+          {"FunctionResourceBox", 
+           GrayLevel[0.45], "\"NestWhileGraph\""},
+          TagBoxNote->"FunctionResourceBox"],
+         ResourceFunction[
+          
+          ResourceObject[<|
+           "Name" -> "NestWhileGraph", "UUID" -> 
+            "08dc5bfc-01f7-414e-8f54-fbbb743d54c0", "ResourceType" -> 
+            "Function", "ResourceLocations" -> {
+              CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0"]}, "Version" -> None, 
+            "DocumentationLink" -> 
+            URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/NestWhileGraph"], "ExampleNotebookData" -> Automatic, 
+            "FunctionLocation" -> 
+            CloudObject[
+             "https://www.wolframcloud.com/obj/wolframphysics/Resources/08d/\
+08dc5bfc-01f7-414e-8f54-fbbb743d54c0/download/DefinitionData"], "ShortName" -> 
+            "NestWhileGraph", "SymbolName" -> 
+            
+            "FunctionRepository`$08dc5bfc01f7414e8f54fbbb743d54c0`\
+NestWhileGraph"|>]],
+         Selectable->False], "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          InterpretationBox[
+           TagBox[
+            FrameBox[
+             PaneBox[GridBox[{
+                {
+                 StyleBox[
+                  StyleBox[
+                   AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                   FontColor->GrayLevel[0.45]],
+                  ShowStringCharacters->False,
+                  FontFamily->"Source Sans Pro Black",
+                  FontSize->0.65 Inherited,
+                  FontWeight->"Heavy",
+                  PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                 StyleBox[
+                  RowBox[{
+                   StyleBox["\<\"IterateTPSMove\"\>", "ResourceFunctionLabel"],
+                    " "}],
+                  ShowAutoStyles->False,
+                  ShowStringCharacters->False,
+                  FontSize->0.9 Inherited,
+                  FontColor->GrayLevel[0.1]]}
+               },
+               GridBoxSpacings->{"Columns" -> {{0.25}}}],
+              Alignment->Left,
+              BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+              BaselinePosition->Baseline,
+              FrameMargins->{{3, 0}, {0, 0}}],
+             Background->RGBColor[0.968627, 0.976471, 0.984314],
+             BaselinePosition->Baseline,
+             DefaultBaseStyle->{},
+             FrameMargins->{{0, 0}, {1, 1}},
+             FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+             RoundingRadius->4],
+            {"FunctionResourceBox", 
+             GrayLevel[0.45], "\"IterateTPSMove\""},
+            TagBoxNote->"FunctionResourceBox"],
+           ResourceFunction[
+            
+            ResourceObject[<|
+             "Name" -> "IterateTPSMove", "UUID" -> 
+              "5930db64-062b-4390-8fae-69e149e6d28a", "ResourceType" -> 
+              "Function", "ResourceLocations" -> {
+                CloudObject[
+                "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+593/5930db64-062b-4390-8fae-69e149e6d28a"]}, "Version" -> None, 
+              "DocumentationLink" -> 
+              URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/IterateTPSMove"], "ExampleNotebookData" -> Automatic, 
+              "FunctionLocation" -> 
+              CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/593/\
+5930db64-062b-4390-8fae-69e149e6d28a/download/DefinitionData"], "ShortName" -> 
+              "IterateTPSMove", "SymbolName" -> 
+              "FunctionRepository`$5930db64062b43908fae69e149e6d28a`\
+IterateTPSMove"|>]],
+           Selectable->False], "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"1", ",", "4", ",", "6"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"7", ",", "6", ",", "5"}], "}"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{"3", ",", "5", ",", "8"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"4", ",", "3", ",", "2"}], "}"}]}], "}"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"ReplacePart", "[", 
+           RowBox[{
+            RowBox[{"Table", "[", 
+             RowBox[{"1", ",", 
+              RowBox[{"{", "8", "}"}]}], "]"}], ",", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"1", ",", "3"}], "}"}], "/.", "indexMapCross"}], 
+              ")"}], "->", "0"}]}], "]"}], "}"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{
+          RowBox[{"UnsameQ", "@@", "#"}], "&"}], ",", "2"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"Graph", "[", 
+      RowBox[{"SimplePegGameGraph2", ",", "\[IndentingNewLine]", 
+       RowBox[{"VertexShapeFunction", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Inset", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              InterpretationBox[
+               TagBox[
+                FrameBox[
+                 PaneBox[GridBox[{
+                    {
+                    StyleBox[
+                    StyleBox[
+                    AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                    FontColor->GrayLevel[0.45]],
+                    ShowStringCharacters->False,
+                    FontFamily->"Source Sans Pro Black",
+                    FontSize->0.65 Inherited,
+                    FontWeight->"Heavy",
+                    PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                    StyleBox[
+                    RowBox[{
+                    
+                    StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                    "ResourceFunctionLabel"], " "}],
+                    ShowAutoStyles->False,
+                    ShowStringCharacters->False,
+                    FontSize->0.9 Inherited,
+                    FontColor->GrayLevel[0.1]]}
+                   },
+                   GridBoxSpacings->{"Columns" -> {{0.25}}}],
+                  Alignment->Left,
+                  BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+                  BaselinePosition->Baseline,
+                  FrameMargins->{{3, 0}, {0, 0}}],
+                 Background->RGBColor[0.968627, 0.976471, 0.984314],
+                 BaselinePosition->Baseline,
+                 DefaultBaseStyle->{},
+                 FrameMargins->{{0, 0}, {1, 1}},
+                 FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+                 RoundingRadius->4],
+                {"FunctionResourceBox", 
+                 GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+                TagBoxNote->"FunctionResourceBox"],
+               ResourceFunction[
+                
+                ResourceObject[<|
+                 "Name" -> "PegSolitaireGraphics", "UUID" -> 
+                  "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+                  "Function", "ResourceLocations" -> {
+                    CloudObject[
+                    "https://www.wolframcloud.com/obj/wolframphysics/\
+Resources/490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+                  "DocumentationLink" -> 
+                  URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+                  "FunctionLocation" -> 
+                  CloudObject[
+                   "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+490/490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], 
+                  "ShortName" -> "PegSolitaireGraphics", "SymbolName" -> 
+                  "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+               Selectable->False], "[", "indexMapCross", "]"}], "[", 
+             "\[IndentingNewLine]", "#2", "]"}], ",", "#1", ",", "Center", 
+            ",", "#3"}], "]"}], "&"}], ")"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"VertexSize", "\[Rule]", "1.2"}], ",", 
+       RowBox[{"PerformanceGoal", "->", "\"\<Quality\>\""}], ",", 
+       RowBox[{"EdgeStyle", "\[Rule]", "Gray"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"GraphLayout", "\[Rule]", "\"\<LayeredDigraphEmbedding\>\""}], 
+       ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "3"}]}], "]"}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.862332642421829*^9, 3.862332684383801*^9}, {
+   3.862332742340163*^9, 3.862332744000904*^9}, {3.862332840885385*^9, 
+   3.862332951149014*^9}, 3.862332998569367*^9, {3.862333032590292*^9, 
+   3.8623331340864687`*^9}, {3.86233317096635*^9, 3.862333174408775*^9}, 
+   3.862333237678224*^9, 3.86233409453463*^9, {3.862334130916564*^9, 
+   3.862334174389414*^9}, {3.862334289117979*^9, 3.862334330118017*^9}, {
+   3.862408320898135*^9, 3.862408366661822*^9}, {3.862412433981492*^9, 
+   3.862412445641157*^9}, 3.862581722280887*^9, {3.862678902120262*^9, 
+   3.862678939931044*^9}, {3.862764237307386*^9, 3.8627642448937483`*^9}, {
+   3.862764296458321*^9, 3.862764324984531*^9}, {3.863602051453808*^9, 
+   3.863602110064966*^9}},
+ CellLabel->"In[273]:=",
+ CellID->2040941480,ExpressionUUID->"4c44a2c5-022e-42c9-91d4-aa47a0eb821a"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{0, 1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 0, 1, 0, 1, 1}, {1, 0, 0, 1, 
+      1, 0, 1, 1}, {0, 0, 0, 0, 1, 1, 1, 1}, {1, 0, 1, 1, 0, 0, 1, 0}, {0, 0, 
+      1, 0, 0, 1, 1, 0}, {1, 1, 0, 0, 0, 0, 1, 0}, {0, 0, 1, 0, 1, 0, 0, 0}, {
+      0, 0, 0, 0, 0, 0, 0, 
+      1}}, {{{1, 2}, {2, 3}, {3, 4}, {3, 5}, {4, 6}, {5, 6}, {5, 7}, {6, 8}, {
+       8, 9}}, Null}, {AspectRatio -> 3, EdgeStyle -> {
+         GrayLevel[0.5]}, 
+       GraphLayout -> {
+        "Dimension" -> 2, "VertexLayout" -> "LayeredDigraphEmbedding"}, 
+       PerformanceGoal -> "Quality", VertexShapeFunction -> {Inset[
+          ResourceFunction[
+           
+           ResourceObject[<|
+            "Name" -> "PegSolitaireGraphics", "UUID" -> 
+             "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+             "Function", "ResourceLocations" -> {
+               CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+             "DocumentationLink" -> 
+             URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+             "FunctionLocation" -> 
+             CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+             "PegSolitaireGraphics", "SymbolName" -> 
+             "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]][{{1, 3} -> 1, {2, 1} -> 2, {2, 2} -> 3, {2, 3} -> 
+            4, {3, 2} -> 5, {3, 3} -> 6, {3, 4} -> 7, {4, 2} -> 8}][#2], #, 
+          Center, #3]& }, VertexSize -> {1.2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {GrayLevel[0.5], Opacity[0.7], Arrowheads[Medium], 
+        ArrowBox[{
+         DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+          "VertexID$2", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+          "VertexID$3", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+          "VertexID$4", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+          "VertexID$5", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$4", Automatic, Center], DynamicLocation[
+          "VertexID$6", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$6", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$7", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$6", Automatic, Center], DynamicLocation[
+          "VertexID$8", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$8", Automatic, Center], DynamicLocation[
+          "VertexID$9", Automatic, Center]}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{4, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 3.}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{4, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 2.5}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{4, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 2.}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{4, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 1.5}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$4"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{4, 2}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 1.5}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$5"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{4, 2}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 1.}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$6"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 4}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{4, 2}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 1.}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$7"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 4}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{4, 2}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 0.5}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$8"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 4.666666666666667}, {2.3333333333333335`, 
+             4.666666666666667}, {4.666666666666667, 2.6666666666666665`}, {
+             4.666666666666667, 1.3333333333333333`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 8, 7, 5, 6}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 4}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{4, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 0.}, Center, {0.3, 0.3}],
+         "DynamicName",
+         BoxID -> "VertexID$9"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.928847235754006*^9, 3.928850419699922*^9},
+ CellLabel->
+  "Out[273]=",ExpressionUUID->"a03c905d-7cb4-4dac-9222-33bcd0b3a71d"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.928847259640747*^9, 
+  3.9288472624376698`*^9}},ExpressionUUID->"ac4358ef-54e1-4185-99d0-\
+97d7f810e74c"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.862407107824935*^9, 3.862407152104362*^9}, {
+   3.862407321798472*^9, 3.862407350273548*^9}, {3.862412567269579*^9, 
+   3.8624125678934507`*^9}, 3.862412631791634*^9, {3.862509489928403*^9, 
+   3.862509530279755*^9}, {3.862509642382022*^9, 3.862509743130403*^9}, {
+   3.862679341871821*^9, 3.8626794650429077`*^9}, 3.863611975458468*^9, {
+   3.863612021120349*^9, 3.863612025197937*^9}, 3.928847804946909*^9, {
+   3.9288478373278723`*^9, 3.928847839862962*^9}},
+ CellID->1471482728,ExpressionUUID->"05ef9af9-e5c3-48ee-b9b4-61c7077688eb"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9288479401438704`*^9, 
+  3.9288479941823883`*^9}},ExpressionUUID->"aad26180-2a6b-4d41-a5da-\
+bef9645f0380"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    TagBox[
+     FrameBox[
+      PaneBox[GridBox[{
+         {
+          StyleBox[
+           StyleBox[
+            AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+             BoxBaselineShift->-0.25,
+             BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+            FontColor->GrayLevel[0.45]],
+           ShowStringCharacters->False,
+           FontFamily->"Source Sans Pro Black",
+           FontSize->0.65 Inherited,
+           FontWeight->"Heavy",
+           PrivateFontOptions->{"OperatorSubstitution"->False}], 
+          StyleBox[
+           RowBox[{
+            StyleBox["\<\"PegSolitaireGraphics\"\>", "ResourceFunctionLabel"],
+             " "}],
+           ShowAutoStyles->False,
+           ShowStringCharacters->False,
+           FontSize->0.9 Inherited,
+           FontColor->GrayLevel[0.1]]}
+        },
+        GridBoxSpacings->{"Columns" -> {{0.25}}}],
+       Alignment->Left,
+       BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+       BaselinePosition->Baseline,
+       FrameMargins->{{3, 0}, {0, 0}}],
+      Background->RGBColor[0.968627, 0.976471, 0.984314],
+      BaselinePosition->Baseline,
+      DefaultBaseStyle->{},
+      FrameMargins->{{0, 0}, {1, 1}},
+      FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+      RoundingRadius->4],
+     {"FunctionResourceBox", 
+      GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+     TagBoxNote->"FunctionResourceBox"],
+    ResourceFunction[
+     ResourceObject[<|
+      "Name" -> "PegSolitaireGraphics", "UUID" -> 
+       "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> "Function", 
+       "ResourceLocations" -> {
+         CloudObject[
+         "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+       "DocumentationLink" -> 
+       URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+       "FunctionLocation" -> 
+       CloudObject[
+        "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+       "PegSolitaireGraphics", "SymbolName" -> 
+       "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+    Selectable->False], "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}], "]"}], "[", 
+  
+  RowBox[{"{", 
+   RowBox[{"1", ",", "1", ",", "1", ",", "0", ",", "0"}], "}"}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[301]:=",ExpressionUUID->"80f3171f-0efa-4d50-b1ab-336879d1ba42"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+    0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+    0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+    3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+    2.3333333333333335`}}, 
+    {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+     TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+      Annotation[#, "Geometry"]& ]}], {
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+     DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+    {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+     DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+  BaseStyle->Directive[
+    GrayLevel[0.93], 
+    EdgeForm[
+     Directive[
+      GrayLevel[1], 
+      AbsoluteThickness[1]]]]]], "Output",
+ CellChangeTimes->{3.9288518095970173`*^9},
+ CellLabel->
+  "Out[301]=",ExpressionUUID->"8fd30b54-52a1-4234-aa2b-ed6fed13089a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"shape", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"xc_", ",", " ", "yc_"}], "}"}], ",", " ", "n_", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"w_", ",", " ", "h_"}], "}"}]}], "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{
+    InterpretationBox[
+     TagBox[
+      FrameBox[
+       PaneBox[GridBox[{
+          {
+           StyleBox[
+            StyleBox[
+             AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+              BoxBaselineShift->-0.25,
+              BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+             FontColor->GrayLevel[0.45]],
+            ShowStringCharacters->False,
+            FontFamily->"Source Sans Pro Black",
+            FontSize->0.65 Inherited,
+            FontWeight->"Heavy",
+            PrivateFontOptions->{"OperatorSubstitution"->False}], 
+           StyleBox[
+            RowBox[{
+             StyleBox["\<\"PegSolitaireGraphics\"\>", "ResourceFunctionLabel"],
+              " "}],
+            ShowAutoStyles->False,
+            ShowStringCharacters->False,
+            FontSize->0.9 Inherited,
+            FontColor->GrayLevel[0.1]]}
+         },
+         GridBoxSpacings->{"Columns" -> {{0.25}}}],
+        Alignment->Left,
+        BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+        BaselinePosition->Baseline,
+        FrameMargins->{{3, 0}, {0, 0}}],
+       Background->RGBColor[0.968627, 0.976471, 0.984314],
+       BaselinePosition->Baseline,
+       DefaultBaseStyle->{},
+       FrameMargins->{{0, 0}, {1, 1}},
+       FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+       RoundingRadius->4],
+      {"FunctionResourceBox", 
+       GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+      TagBoxNote->"FunctionResourceBox"],
+     ResourceFunction[
+      ResourceObject[<|
+       "Name" -> "PegSolitaireGraphics", "UUID" -> 
+        "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> "Function", 
+        "ResourceLocations" -> {
+          CloudObject[
+          "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+        "DocumentationLink" -> 
+        URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+        "FunctionLocation" -> 
+        CloudObject[
+         "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+        "PegSolitaireGraphics", "SymbolName" -> 
+        "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+     Selectable->False], "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}], "]"}], "[", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1", ",", "0", ",", "0"}], "}"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.928849669668627*^9, 3.928849694808752*^9}, {
+  3.928851860371582*^9, 3.928851898738894*^9}, {3.928852124546537*^9, 
+  3.92885213118192*^9}, {3.928852175582129*^9, 3.9288521909666557`*^9}, {
+  3.928854680598563*^9, 3.928854685794265*^9}},
+ CellLabel->
+  "In[376]:=",ExpressionUUID->"e9e68a60-d1c3-4d71-a7ca-02142d62ef4c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[UndirectedEdge]", "2"}], ",", 
+     RowBox[{"2", "\[UndirectedEdge]", "3"}]}], "}"}], ",", 
+   RowBox[{"VertexShapeFunction", "\[Rule]", "shape"}], ",", 
+   RowBox[{"VertexSize", "\[Rule]", "0.5"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.928848556612953*^9, 3.928848817069252*^9}, {
+  3.928849420376645*^9, 3.9288494339668303`*^9}, {3.928851816095574*^9, 
+  3.928851823202498*^9}, {3.9288519044907427`*^9, 3.928851918889176*^9}, {
+  3.9288521011169767`*^9, 3.928852104253332*^9}},
+ CellLabel->
+  "In[375]:=",ExpressionUUID->"fbcdaa5c-7e6d-4cab-af4a-517bf62c1d2a"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{1, 2, 3}, {Null, {{1, 2}, {2, 3}}}, {
+      VertexShapeFunction -> {$CellContext`shape}, VertexSize -> {0.5}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[0.], 
+        ArrowBox[{{{0., 3.6739403974420594`*^-16}, {1., 
+         2.4492935982947064`*^-16}}, {{1., 2.4492935982947064`*^-16}, {2., 
+         0.}}}, 0.25]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        GraphicsBox[{
+          
+          GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+           0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+           0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+           3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+           2.3333333333333335`}}, {
+            Directive[{
+              Hue[0.6, 0.3, 0.95], 
+              EdgeForm[{
+                Hue[0.6, 0.3, 0.75]}], 
+              GrayLevel[0.93], 
+              EdgeForm[
+               Directive[
+                GrayLevel[1], 
+                AbsoluteThickness[1]]]}], {
+             TagBox[
+              PolygonBox[{{1, 2, 4, 3, 6, 5}}], 
+              Annotation[#, "Geometry"]& ]}}], {{{
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{1, 3}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 1}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 2}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{2, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{3, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}}}}, {BaseStyle -> Directive[
+            GrayLevel[0.93], 
+            EdgeForm[
+             Directive[
+              GrayLevel[1], 
+              AbsoluteThickness[1]]]]}], GraphicsBox[{
+          
+          GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+           0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+           0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+           3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+           2.3333333333333335`}}, {
+            Directive[{
+              Hue[0.6, 0.3, 0.95], 
+              EdgeForm[{
+                Hue[0.6, 0.3, 0.75]}], 
+              GrayLevel[0.93], 
+              EdgeForm[
+               Directive[
+                GrayLevel[1], 
+                AbsoluteThickness[1]]]}], {
+             TagBox[
+              PolygonBox[{{1, 2, 4, 3, 6, 5}}], 
+              Annotation[#, "Geometry"]& ]}}], {{{
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{1, 3}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 1}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 2}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{2, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{3, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}}}}, {BaseStyle -> Directive[
+            GrayLevel[0.93], 
+            EdgeForm[
+             Directive[
+              GrayLevel[1], 
+              AbsoluteThickness[1]]]]}], GraphicsBox[{
+          
+          GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+           0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+           0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+           3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+           2.3333333333333335`}}, {
+            Directive[{
+              Hue[0.6, 0.3, 0.95], 
+              EdgeForm[{
+                Hue[0.6, 0.3, 0.75]}], 
+              GrayLevel[0.93], 
+              EdgeForm[
+               Directive[
+                GrayLevel[1], 
+                AbsoluteThickness[1]]]}], {
+             TagBox[
+              PolygonBox[{{1, 2, 4, 3, 6, 5}}], 
+              Annotation[#, "Geometry"]& ]}}], {{{
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{1, 3}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 1}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[None], 
+             RGBColor[1, 0, 0], 
+             DiskBox[{2, 2}, 
+              NCache[
+               Rational[1, 3], 0.3333333333333333]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{2, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}, {
+             EdgeForm[
+              GrayLevel[0.75]], 
+             GrayLevel[0.8], 
+             DiskBox[{3, 3}, 
+              NCache[
+               Rational[1, 5], 0.2]]}}}}, {BaseStyle -> Directive[
+            GrayLevel[0.93], 
+            EdgeForm[
+             Directive[
+              GrayLevel[1], 
+              AbsoluteThickness[1]]]]}]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.92884858164279*^9, 3.928848621996395*^9}, {
+   3.9288486553313313`*^9, 3.92884884257095*^9}, {3.928849421274231*^9, 
+   3.9288494343302097`*^9}, 3.9288519212562723`*^9, 3.928852105977789*^9, 
+   3.9288521925491753`*^9, {3.928854670777973*^9, 3.9288546823555183`*^9}},
+ CellLabel->
+  "Out[375]=",ExpressionUUID->"19cc9f6d-7bfa-47c6-9a4e-a095fbf730d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["PegSolitaireGraphics", "Subsubsection",
+ CellChangeTimes->{{3.928852605749074*^9, 
+  3.928852615578507*^9}},ExpressionUUID->"0acab181-8a77-45d5-a78a-\
+9107107d2c1a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"coords", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"states", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   InterpretationBox[
+    TagBox[
+     FrameBox[
+      PaneBox[GridBox[{
+         {
+          StyleBox[
+           StyleBox[
+            AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+             BoxBaselineShift->-0.25,
+             BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+            FontColor->GrayLevel[0.45]],
+           ShowStringCharacters->False,
+           FontFamily->"Source Sans Pro Black",
+           FontSize->0.65 Inherited,
+           FontWeight->"Heavy",
+           PrivateFontOptions->{"OperatorSubstitution"->False}], 
+          StyleBox[
+           RowBox[{
+            StyleBox["\<\"PegSolitaireGraphics\"\>", "ResourceFunctionLabel"],
+             " "}],
+           ShowAutoStyles->False,
+           ShowStringCharacters->False,
+           FontSize->0.9 Inherited,
+           FontColor->GrayLevel[0.1]]}
+        },
+        GridBoxSpacings->{"Columns" -> {{0.25}}}],
+       Alignment->Left,
+       BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+       BaselinePosition->Baseline,
+       FrameMargins->{{3, 0}, {0, 0}}],
+      Background->RGBColor[0.968627, 0.976471, 0.984314],
+      BaselinePosition->Baseline,
+      DefaultBaseStyle->{},
+      FrameMargins->{{0, 0}, {1, 1}},
+      FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+      RoundingRadius->4],
+     {"FunctionResourceBox", 
+      GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+     TagBoxNote->"FunctionResourceBox"],
+    ResourceFunction[
+     ResourceObject[<|
+      "Name" -> "PegSolitaireGraphics", "UUID" -> 
+       "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> "Function", 
+       "ResourceLocations" -> {
+         CloudObject[
+         "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+       "DocumentationLink" -> 
+       URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+       "FunctionLocation" -> 
+       CloudObject[
+        "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+       "PegSolitaireGraphics", "SymbolName" -> 
+       "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+    Selectable->False], "[", "coords", "]"}], "[", "states", "]"}]}], "Input",\
+
+ CellChangeTimes->{{3.9288526283927794`*^9, 3.928852669569784*^9}, {
+  3.928853026513784*^9, 3.9288531006699963`*^9}, {3.9288537507695847`*^9, 
+  3.92885375466884*^9}, {3.928853844022635*^9, 3.92885387570511*^9}},
+ CellLabel->
+  "In[371]:=",ExpressionUUID->"9cc03d97-2256-4c14-962c-62d632906271"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+    0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+    0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+    3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+    2.3333333333333335`}}, 
+    {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+     TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+      Annotation[#, "Geometry"]& ]}], {
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {RGBColor[1, 0, 0], EdgeForm[None], 
+     DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+    {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+     DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+  BaseStyle->Directive[
+    GrayLevel[0.93], 
+    EdgeForm[
+     Directive[
+      GrayLevel[1], 
+      AbsoluteThickness[1]]]]]], "Output",
+ CellChangeTimes->{
+  3.9288537551891003`*^9, {3.9288538447263517`*^9, 3.928853876081547*^9}},
+ CellLabel->
+  "Out[373]=",ExpressionUUID->"1e93987c-bf3e-4128-8a02-7324cc62cf9f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Append", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{"1", ",", " ", 
+     RowBox[{
+      RowBox[{"Length", "[", "coords", "]"}], "-", "1"}]}], "]"}], ",", "0"}],
+   "]"}]], "Input",
+ CellChangeTimes->{{3.928855023585038*^9, 3.928855077199212*^9}},
+ CellLabel->
+  "In[382]:=",ExpressionUUID->"73d14101-350c-444e-be87-b27093fd6f4c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{{3.928855028564513*^9, 3.9288550775191927`*^9}},
+ CellLabel->
+  "Out[382]=",ExpressionUUID->"4d5d8f3c-beea-4820-aefe-f376bcfc1b65"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"startingboards", "[", "coords_", "]"}], ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      InterpretationBox[
+       TagBox[
+        FrameBox[
+         PaneBox[GridBox[{
+            {
+             StyleBox[
+              StyleBox[
+               AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                BoxBaselineShift->-0.25,
+                BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+               FontColor->GrayLevel[0.45]],
+              ShowStringCharacters->False,
+              FontFamily->"Source Sans Pro Black",
+              FontSize->0.65 Inherited,
+              FontWeight->"Heavy",
+              PrivateFontOptions->{"OperatorSubstitution"->False}], 
+             StyleBox[
+              RowBox[{
+               
+               StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                "ResourceFunctionLabel"], " "}],
+              ShowAutoStyles->False,
+              ShowStringCharacters->False,
+              FontSize->0.9 Inherited,
+              FontColor->GrayLevel[0.1]]}
+           },
+           GridBoxSpacings->{"Columns" -> {{0.25}}}],
+          Alignment->Left,
+          BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+          BaselinePosition->Baseline,
+          FrameMargins->{{3, 0}, {0, 0}}],
+         Background->RGBColor[0.968627, 0.976471, 0.984314],
+         BaselinePosition->Baseline,
+         DefaultBaseStyle->{},
+         FrameMargins->{{0, 0}, {1, 1}},
+         FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+         RoundingRadius->4],
+        {"FunctionResourceBox", 
+         GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+        TagBoxNote->"FunctionResourceBox"],
+       ResourceFunction[
+        ResourceObject[<|
+         "Name" -> "PegSolitaireGraphics", "UUID" -> 
+          "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+          "Function", "ResourceLocations" -> {
+            CloudObject[
+            "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+          "DocumentationLink" -> 
+          URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+          "FunctionLocation" -> 
+          CloudObject[
+           "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+          "PegSolitaireGraphics", "SymbolName" -> 
+          "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+       Selectable->False], "[", "coords", "]"}], "[", "state", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"state", ",", " ", 
+      RowBox[{"Permutations", "[", 
+       RowBox[{"Append", "[", 
+        RowBox[{
+         RowBox[{"Table", "[", 
+          RowBox[{"1", ",", " ", 
+           RowBox[{
+            RowBox[{"Length", "[", "coords", "]"}], "-", "1"}]}], "]"}], ",", 
+         "0"}], "]"}], "]"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.928854958078511*^9, 3.9288550088994493`*^9}, {
+  3.9288550826000443`*^9, 3.92885508933803*^9}},
+ CellLabel->
+  "In[383]:=",ExpressionUUID->"d189e8b4-3964-4c06-b899-18caaa3e6799"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"startingboards", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.928855092966123*^9, 3.928855100404789*^9}},
+ CellLabel->
+  "In[384]:=",ExpressionUUID->"c068e36d-7d61-4081-9f80-0cf0d3f696eb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+      0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      2.3333333333333335`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+      0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      2.3333333333333335`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+      0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      2.3333333333333335`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+      0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      2.3333333333333335`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+      0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      2.3333333333333335`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]]}], "}"}]], "Output",
+ CellChangeTimes->{3.928855100811483*^9},
+ CellLabel->
+  "Out[384]=",ExpressionUUID->"12cd6805-f13b-4d32-94c5-6dda367c62b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"startingboards", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "5"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "2"}], "}"}], "\[Rule]", "6"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "1"}], "}"}], "\[Rule]", "7"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", "8"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], "\[Rule]", "9"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.928855172818966*^9, 3.928855196517775*^9}},
+ CellLabel->
+  "In[444]:=",ExpressionUUID->"a8849716-c83d-48be-986f-9eed045c2c11"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+      3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+      0.3333333333333333}, {0.3333333333333333, 0.3333333333333333}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 4, 3, 2}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]]}], "}"}]], "Output",
+ CellChangeTimes->{{3.928855190745091*^9, 3.928855203471376*^9}, 
+   3.928856729605426*^9},
+ CellLabel->
+  "Out[444]=",ExpressionUUID->"d71991ec-8f4d-4d22-a65a-4ea1acdb203d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{"SimplePegGameGraph1", ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexShapeFunction", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Inset", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          InterpretationBox[
+           TagBox[
+            FrameBox[
+             PaneBox[GridBox[{
+                {
+                 StyleBox[
+                  StyleBox[
+                   AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                   FontColor->GrayLevel[0.45]],
+                  ShowStringCharacters->False,
+                  FontFamily->"Source Sans Pro Black",
+                  FontSize->0.65 Inherited,
+                  FontWeight->"Heavy",
+                  PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                 StyleBox[
+                  RowBox[{
+                   
+                   StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                    "ResourceFunctionLabel"], " "}],
+                  ShowAutoStyles->False,
+                  ShowStringCharacters->False,
+                  FontSize->0.9 Inherited,
+                  FontColor->GrayLevel[0.1]]}
+               },
+               GridBoxSpacings->{"Columns" -> {{0.25}}}],
+              Alignment->Left,
+              BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+              BaselinePosition->Baseline,
+              FrameMargins->{{3, 0}, {0, 0}}],
+             Background->RGBColor[0.968627, 0.976471, 0.984314],
+             BaselinePosition->Baseline,
+             DefaultBaseStyle->{},
+             FrameMargins->{{0, 0}, {1, 1}},
+             FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+             RoundingRadius->4],
+            {"FunctionResourceBox", 
+             GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+            TagBoxNote->"FunctionResourceBox"],
+           ResourceFunction[
+            
+            ResourceObject[<|
+             "Name" -> "PegSolitaireGraphics", "UUID" -> 
+              "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+              "Function", "ResourceLocations" -> {
+                CloudObject[
+                "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+              "DocumentationLink" -> 
+              URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+              "FunctionLocation" -> 
+              CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+              "PegSolitaireGraphics", "SymbolName" -> 
+              "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+           Selectable->False], "[", "indexMapT", "]"}], "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1", ",", "1", ",", "0", ",", "0"}], "}"}], "]"}],
+         ",", "#1", ",", "Center", ",", "#3"}], "]"}], "&"}], ")"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexSize", "\[Rule]", "1"}], ",", 
+   RowBox[{"PerformanceGoal", "->", "\"\<Quality\>\""}], ",", 
+   RowBox[{"EdgeStyle", "\[Rule]", "Gray"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexCoordinates", "\[Rule]", 
+    RowBox[{"MapIndexed", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"#1", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"4", 
+           RowBox[{"#2", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ",", "0"}], "}"}]}], "&"}], ",",
+       "\[IndentingNewLine]", 
+      RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9288553457479773`*^9, 3.928855387355424*^9}, {
+  3.9288555043827667`*^9, 3.9288555089474363`*^9}},
+ CellLabel->
+  "In[399]:=",ExpressionUUID->"130fd491-0ca4-4fb7-a04a-952096f92652"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 1, 1, 1, 0}, {0, 1, 1, 0, 1}, {0, 0, 0, 1, 1}, {1, 0, 0, 0, 
+      0}}, {{{1, 2}, {2, 3}, {3, 4}}, Null}, {
+      AspectRatio -> Rational[1, 2], EdgeStyle -> {
+         GrayLevel[0.5]}, GraphLayout -> {"Dimension" -> 2}, PerformanceGoal -> 
+       "Quality", VertexCoordinates -> {{4, 0}, {8, 0}, {12, 0}, {16, 0}}, 
+       VertexShapeFunction -> {Inset[
+          ResourceFunction[
+           
+           ResourceObject[<|
+            "Name" -> "PegSolitaireGraphics", "UUID" -> 
+             "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+             "Function", "ResourceLocations" -> {
+               CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+             "DocumentationLink" -> 
+             URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+             "FunctionLocation" -> 
+             CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+             "PegSolitaireGraphics", "SymbolName" -> 
+             "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]][$CellContext`indexMapT][{1, 1, 1, 0, 0}], #, 
+          Center, #3]& }, VertexSize -> {1}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {GrayLevel[0.5], Opacity[0.7], Arrowheads[Medium], 
+        ArrowBox[{{
+          DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+           "VertexID$2", Automatic, Center]}, {
+          DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+           "VertexID$3", Automatic, Center]}, {
+          DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+           "VertexID$4", Automatic, Center]}}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {4., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {8., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {12., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {16., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$4"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.928855509263445*^9},
+ CellLabel->
+  "Out[399]=",ExpressionUUID->"1933bedb-aae6-45a8-9b7f-f7b70c436541"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Inset", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      InterpretationBox[
+       TagBox[
+        FrameBox[
+         PaneBox[GridBox[{
+            {
+             StyleBox[
+              StyleBox[
+               AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                BoxBaselineShift->-0.25,
+                BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+               FontColor->GrayLevel[0.45]],
+              ShowStringCharacters->False,
+              FontFamily->"Source Sans Pro Black",
+              FontSize->0.65 Inherited,
+              FontWeight->"Heavy",
+              PrivateFontOptions->{"OperatorSubstitution"->False}], 
+             StyleBox[
+              RowBox[{
+               
+               StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                "ResourceFunctionLabel"], " "}],
+              ShowAutoStyles->False,
+              ShowStringCharacters->False,
+              FontSize->0.9 Inherited,
+              FontColor->GrayLevel[0.1]]}
+           },
+           GridBoxSpacings->{"Columns" -> {{0.25}}}],
+          Alignment->Left,
+          BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+          BaselinePosition->Baseline,
+          FrameMargins->{{3, 0}, {0, 0}}],
+         Background->RGBColor[0.968627, 0.976471, 0.984314],
+         BaselinePosition->Baseline,
+         DefaultBaseStyle->{},
+         FrameMargins->{{0, 0}, {1, 1}},
+         FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+         RoundingRadius->4],
+        {"FunctionResourceBox", 
+         GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+        TagBoxNote->"FunctionResourceBox"],
+       ResourceFunction[
+        ResourceObject[<|
+         "Name" -> "PegSolitaireGraphics", "UUID" -> 
+          "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+          "Function", "ResourceLocations" -> {
+            CloudObject[
+            "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+          "DocumentationLink" -> 
+          URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+          "FunctionLocation" -> 
+          CloudObject[
+           "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+          "PegSolitaireGraphics", "SymbolName" -> 
+          "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+       Selectable->False], "[", "indexMapT", "]"}], "[", 
+     "\[IndentingNewLine]", "#2", "]"}], ",", "#1", ",", "Center", ",", 
+    "#3"}], "]"}], "&"}]], "Input",
+ CellChangeTimes->{{3.928855420037269*^9, 3.9288554230726957`*^9}},
+ CellLabel->
+  "In[397]:=",ExpressionUUID->"12ac193d-7afc-4a78-a80a-b9ddd9a15746"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Inset", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      InterpretationBox[
+       TagBox[
+        FrameBox[
+         PaneBox[GridBox[{
+            {
+             StyleBox[
+              StyleBox[
+               AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                BoxBaselineShift->-0.25,
+                BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+               FontColor->GrayLevel[0.45]],
+              ShowStringCharacters->False,
+              FontFamily->"Source Sans Pro Black",
+              FontSize->0.65 Inherited,
+              FontWeight->"Heavy",
+              PrivateFontOptions->{"OperatorSubstitution"->False}], 
+             StyleBox[
+              RowBox[{
+               
+               StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                "ResourceFunctionLabel"], " "}],
+              ShowAutoStyles->False,
+              ShowStringCharacters->False,
+              FontSize->0.9 Inherited,
+              FontColor->GrayLevel[0.1]]}
+           },
+           GridBoxSpacings->{"Columns" -> {{0.25}}}],
+          Alignment->Left,
+          BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+          BaselinePosition->Baseline,
+          FrameMargins->{{3, 0}, {0, 0}}],
+         Background->RGBColor[0.968627, 0.976471, 0.984314],
+         BaselinePosition->Baseline,
+         DefaultBaseStyle->{},
+         FrameMargins->{{0, 0}, {1, 1}},
+         FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+         RoundingRadius->4],
+        {"FunctionResourceBox", 
+         GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+        TagBoxNote->"FunctionResourceBox"],
+       ResourceFunction[
+        ResourceObject[<|
+         "Name" -> "PegSolitaireGraphics", "UUID" -> 
+          "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+          "Function", "ResourceLocations" -> {
+            CloudObject[
+            "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+          "DocumentationLink" -> 
+          URL["https://www.wolframcloud.com/obj/wolframphysics/MultiwayGames/\
+PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+          "FunctionLocation" -> 
+          CloudObject[
+           "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+          "PegSolitaireGraphics", "SymbolName" -> 
+          "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+       Selectable->False], "[", "indexMapT", "]"}], "[", "#2", "]"}], ",", 
+    "#1", ",", "Center", ",", "#3"}], "]"}], "&"}]], "Output",
+ CellChangeTimes->{{3.9288554172042933`*^9, 3.928855421969702*^9}},
+ CellLabel->
+  "Out[397]=",ExpressionUUID->"4e253569-79da-48dc-b733-2b818caed72f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{"SimplePegGameGraph1", ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexShapeFunction", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Inset", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          InterpretationBox[
+           TagBox[
+            FrameBox[
+             PaneBox[GridBox[{
+                {
+                 StyleBox[
+                  StyleBox[
+                   AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                   FontColor->GrayLevel[0.45]],
+                  ShowStringCharacters->False,
+                  FontFamily->"Source Sans Pro Black",
+                  FontSize->0.65 Inherited,
+                  FontWeight->"Heavy",
+                  PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                 StyleBox[
+                  RowBox[{
+                   
+                   StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                    "ResourceFunctionLabel"], " "}],
+                  ShowAutoStyles->False,
+                  ShowStringCharacters->False,
+                  FontSize->0.9 Inherited,
+                  FontColor->GrayLevel[0.1]]}
+               },
+               GridBoxSpacings->{"Columns" -> {{0.25}}}],
+              Alignment->Left,
+              BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+              BaselinePosition->Baseline,
+              FrameMargins->{{3, 0}, {0, 0}}],
+             Background->RGBColor[0.968627, 0.976471, 0.984314],
+             BaselinePosition->Baseline,
+             DefaultBaseStyle->{},
+             FrameMargins->{{0, 0}, {1, 1}},
+             FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+             RoundingRadius->4],
+            {"FunctionResourceBox", 
+             GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+            TagBoxNote->"FunctionResourceBox"],
+           ResourceFunction[
+            
+            ResourceObject[<|
+             "Name" -> "PegSolitaireGraphics", "UUID" -> 
+              "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+              "Function", "ResourceLocations" -> {
+                CloudObject[
+                "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
+490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+              "DocumentationLink" -> 
+              URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+              "FunctionLocation" -> 
+              CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+              "PegSolitaireGraphics", "SymbolName" -> 
+              "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+           Selectable->False], "[", "indexMapT", "]"}], "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], "]"}],
+         ",", "#1", ",", "Center", ",", "#3"}], "]"}], "&"}], ")"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexSize", "\[Rule]", "1"}], ",", 
+   RowBox[{"PerformanceGoal", "->", "\"\<Quality\>\""}], ",", 
+   RowBox[{"EdgeStyle", "\[Rule]", "Gray"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexCoordinates", "\[Rule]", 
+    RowBox[{"MapIndexed", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"#1", "->", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"4", 
+           RowBox[{"#2", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ",", "0"}], "}"}]}], "&"}], ",",
+       "\[IndentingNewLine]", 
+      RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.928855535690568*^9, 3.928855601753887*^9}, {
+  3.9288556339150057`*^9, 3.928855680272406*^9}, {3.928855716107668*^9, 
+  3.92885572774184*^9}, {3.928856320518558*^9, 3.928856352028677*^9}, {
+  3.928856424995191*^9, 3.9288564359001703`*^9}, {3.9288564728613586`*^9, 
+  3.928856515663755*^9}, {3.9288565921094303`*^9, 3.928856596434676*^9}, {
+  3.928856917058577*^9, 3.928856943306761*^9}, {3.928857143374214*^9, 
+  3.9288571548133163`*^9}, {3.9288571997900257`*^9, 3.928857220259481*^9}, {
+  3.928857265380743*^9, 3.928857284306799*^9}},
+ CellLabel->
+  "In[459]:=",ExpressionUUID->"bfb00c18-b468-44e2-ae5c-48e995e3aad7"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 1, 1, 1, 0}, {0, 1, 1, 0, 1}, {0, 0, 0, 1, 1}, {1, 0, 0, 0, 
+      0}}, {{{1, 2}, {2, 3}, {3, 4}}, Null}, {
+      AspectRatio -> Rational[1, 2], EdgeStyle -> {
+         GrayLevel[0.5]}, GraphLayout -> {"Dimension" -> 2}, PerformanceGoal -> 
+       "Quality", VertexCoordinates -> {{4, 0}, {8, 0}, {12, 0}, {16, 0}}, 
+       VertexShapeFunction -> {Inset[
+          ResourceFunction[
+           
+           ResourceObject[<|
+            "Name" -> "PegSolitaireGraphics", "UUID" -> 
+             "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+             "Function", "ResourceLocations" -> {
+               CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+             "DocumentationLink" -> 
+             URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+             "FunctionLocation" -> 
+             CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+             "PegSolitaireGraphics", "SymbolName" -> 
+             "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]][$CellContext`indexMapT][{1, 1, 1, 1, 0}], #, 
+          Center, #3]& }, VertexSize -> {1}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {GrayLevel[0.5], Opacity[0.7], Arrowheads[Medium], 
+        ArrowBox[{{
+          DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+           "VertexID$2", Automatic, Center]}, {
+          DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+           "VertexID$3", Automatic, Center]}, {
+          DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+           "VertexID$4", Automatic, Center]}}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {4., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {8., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {12., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 3.6666666666666665`}, {
+             0.3333333333333333, 2.3333333333333335`}, {2.6666666666666665`, 
+             0.3333333333333333}, {1.3333333333333333`, 0.3333333333333333}, {
+             3.6666666666666665`, 3.6666666666666665`}, {3.6666666666666665`, 
+             2.3333333333333335`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3, 6, 5}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {16., 0.}, Center, {2., 2.}],
+         "DynamicName",
+         BoxID -> "VertexID$4"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{
+  3.928855602828054*^9, {3.9288556564458303`*^9, 3.928855680670903*^9}, {
+   3.9288557181438217`*^9, 3.9288557280314903`*^9}, {3.928856323941722*^9, 
+   3.928856352319077*^9}, 3.928856429982698*^9, {3.928856476744955*^9, 
+   3.9288564881903343`*^9}, 3.928856520172512*^9, {3.9288566017247877`*^9, 
+   3.9288566106821327`*^9}, 3.928856724359311*^9, 3.9288567587450027`*^9, {
+   3.928856920967029*^9, 3.928856943732478*^9}, {3.928857145216674*^9, 
+   3.928857155235708*^9}, {3.928857201290453*^9, 3.928857220570074*^9}, 
+   3.928857284701627*^9},
+ CellLabel->
+  "Out[459]=",ExpressionUUID->"82d8da37-c7a8-4e7c-a854-1075681156cd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]], "Input",
+ CellChangeTimes->{3.928856508101777*^9, 3.928857246007517*^9},
+ CellLabel->
+  "In[435]:=",ExpressionUUID->"13797ed6-5f74-4bb5-860b-6c33b7ebc909"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.928856508368154*^9},
+ CellLabel->
+  "Out[435]=",ExpressionUUID->"44fb732e-57d8-48c1-8503-c041f0b68b47"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["SimplePegGameGraph1"], "Input",
+ CellChangeTimes->{3.928856527628199*^9},
+ CellLabel->
+  "In[438]:=",ExpressionUUID->"c1f80156-8957-4086-b1cf-59fe883b15e4"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{1, 1, 1, 1, 0}, {0, 1, 1, 0, 1}, {0, 0, 0, 1, 1}, {1, 0, 0, 0, 
+      0}}, {{{1, 2}, {2, 3}, {3, 4}}, Null}, {
+      AspectRatio -> Rational[1, 2], GraphLayout -> {"Dimension" -> 2}}]]}, 
+    TagBox[
+     GraphicsGroupBox[
+      GraphicsComplexBox[{{0., 1.5000000000000002`}, {1., 1.2}, {2., 0.6}, {
+       3., 0.}}, {
+        {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[Medium], 
+         ArrowBox[{{1, 2}, {2, 3}, {3, 4}}, 0.030239520958083826`]}, 
+        {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+         DiskBox[1, 0.030239520958083826], DiskBox[2, 0.030239520958083826], 
+         DiskBox[3, 0.030239520958083826], 
+         DiskBox[4, 0.030239520958083826]}}]],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.928856527911333*^9},
+ CellLabel->
+  "Out[438]=",ExpressionUUID->"4cef5114-5d76-4f14-98d0-7aec3865c68a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MapIndexed", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"#1", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"4", 
+        RowBox[{"#2", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ",", "0"}], "}"}]}], "&"}], ",", 
+   RowBox[{"VertexList", "@", "SimplePegGameGraph1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.928856537971623*^9, 3.928856550907928*^9}},
+ CellLabel->
+  "In[439]:=",ExpressionUUID->"8fbde2c7-9e59-44b3-b444-04c11858379d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "0"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"4", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1", ",", "1", ",", "0", ",", "1"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"8", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"12", ",", "0"}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{"16", ",", "0"}], "}"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.9288565511312523`*^9},
+ CellLabel->
+  "Out[439]=",ExpressionUUID->"153d8a48-712e-4648-b062-eb1107cb477d"]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{299, Automatic}, {29, Automatic}},
@@ -36,9 +3748,113 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 11760, 272, 332, "Input",ExpressionUUID->"8eb78e77-9fb9-41e8-8265-ca571dcaa60b"],
+Cell[12346, 296, 8453, 164, 82, "Output",ExpressionUUID->"c57b34ae-67cd-4dae-aec7-67ca09204a14"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20836, 465, 1202, 34, 94, "Input",ExpressionUUID->"fbf84cfc-9bb5-4407-affc-dbb251454108"],
+Cell[22041, 501, 684, 21, 34, "Output",ExpressionUUID->"85196c89-6176-4885-a43a-e8b6f7b85f4e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22762, 527, 894, 26, 73, "Input",ExpressionUUID->"cd161f98-a78a-40cf-9baf-cac53b9afe97"],
+Cell[23659, 555, 1276, 28, 376, "Output",ExpressionUUID->"7af38ac1-d6bf-434b-963d-d5262cb0dc49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24972, 588, 5780, 144, 115, "Input",ExpressionUUID->"de47ce56-c957-4d8c-a4a6-fa7c8d23a092"],
+Cell[30755, 734, 1191, 25, 171, "Output",ExpressionUUID->"388c893d-71f2-45fc-84c2-c9e94727d67a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31983, 764, 432, 14, 30, "Input",ExpressionUUID->"1b0d7f54-0e0e-4f31-a231-3d67cb55b5f4"],
+Cell[32418, 780, 255, 7, 34, "Output",ExpressionUUID->"11b86adb-b26a-4d72-94b1-9ffba9f38389"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32710, 792, 3211, 85, 36, "Input",ExpressionUUID->"33076960-ee2a-440d-95aa-bd092063b67f"],
+Cell[35924, 879, 1339, 29, 376, "Output",ExpressionUUID->"502b60cb-d7b4-4ba0-b1e1-fef38105e4b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37300, 913, 159, 3, 30, "Input",ExpressionUUID->"b811489f-98eb-4aeb-8186-58e6e03c922c"],
+Cell[37462, 918, 537, 14, 34, "Output",ExpressionUUID->"bdfc0bb2-cf28-443e-a651-6b5f23933da5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38036, 937, 525, 16, 73, "Input",ExpressionUUID->"387ed41c-587d-4484-a453-04e7ef6e9c17"],
+Cell[38564, 955, 888, 29, 34, "Output",ExpressionUUID->"c7946c9d-da8f-4923-9595-7fadc24bbba9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39489, 989, 334, 8, 30, "Input",ExpressionUUID->"21c40997-962d-47c8-8393-ae7be2a11939"],
+Cell[39826, 999, 841, 16, 28, "Message",ExpressionUUID->"2af2184b-1934-4d7f-b7ec-4705c6aef0cf"],
+Cell[40670, 1017, 841, 16, 28, "Message",ExpressionUUID->"342a2c43-db81-4adf-acb9-c9d17bd8aaa2"],
+Cell[41514, 1035, 841, 16, 28, "Message",ExpressionUUID->"cbe0cc36-f760-4877-94e8-72f124b15735"],
+Cell[42358, 1053, 459, 10, 28, "Message",ExpressionUUID->"7f836574-1733-4a22-a5fe-07e366b92fa8"],
+Cell[42820, 1065, 220, 5, 34, "Output",ExpressionUUID->"33cdfa36-bbe8-425b-b7b6-e8ab79117c87"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43077, 1075, 118, 2, 30, "Input",ExpressionUUID->"e40d238d-f938-4f43-8147-ed7cf53ab249"],
+Cell[43198, 1079, 633, 20, 34, "Output",ExpressionUUID->"ae4664b7-bfaf-44c7-a5e2-42bdc685d50a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43868, 1104, 12623, 286, 311, "Input",ExpressionUUID->"4c44a2c5-022e-42c9-91d4-aa47a0eb821a",
+ CellID->2040941480],
+Cell[56494, 1392, 21219, 396, 449, "Output",ExpressionUUID->"a03c905d-7cb4-4dac-9222-33bcd0b3a71d"]
+}, Open  ]],
+Cell[77728, 1791, 154, 3, 30, "Input",ExpressionUUID->"ac4358ef-54e1-4185-99d0-97d7f810e74c"],
+Cell[77885, 1796, 586, 8, 30, "Input",ExpressionUUID->"05ef9af9-e5c3-48ee-b9b4-61c7077688eb",
+ CellID->1471482728],
+Cell[78474, 1806, 156, 3, 30, "Input",ExpressionUUID->"aad26180-2a6b-4d41-a5da-bef9645f0380"],
+Cell[CellGroupData[{
+Cell[78655, 1813, 3093, 83, 36, "Input",ExpressionUUID->"80f3171f-0efa-4d50-b1ab-336879d1ba42"],
+Cell[81751, 1898, 1289, 28, 376, "Output",ExpressionUUID->"8fd30b54-52a1-4234-aa2b-ed6fed13089a"]
+}, Open  ]],
+Cell[83055, 1929, 3654, 93, 36, "Input",ExpressionUUID->"e9e68a60-d1c3-4d71-a7ca-02142d62ef4c"],
+Cell[CellGroupData[{
+Cell[86734, 2026, 665, 14, 30, "Input",ExpressionUUID->"fbcdaa5c-7e6d-4cab-af4a-517bf62c1d2a"],
+Cell[87402, 2042, 6562, 173, 36, "Output",ExpressionUUID->"19cc9f6d-7bfa-47c6-9a4e-a095fbf730d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94001, 2220, 171, 3, 45, "Subsubsection",ExpressionUUID->"0acab181-8a77-45d5-a78a-9107107d2c1a"],
+Cell[CellGroupData[{
+Cell[94197, 2227, 3489, 91, 79, "Input",ExpressionUUID->"9cc03d97-2256-4c14-962c-62d632906271"],
+Cell[97689, 2320, 1347, 29, 376, "Output",ExpressionUUID->"1e93987c-bf3e-4128-8a02-7324cc62cf9f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99073, 2354, 365, 10, 30, "Input",ExpressionUUID->"73d14101-350c-444e-be87-b27093fd6f4c"],
+Cell[99441, 2366, 254, 5, 34, "Output",ExpressionUUID->"4d5d8f3c-beea-4820-aefe-f376bcfc1b65"]
+}, Open  ]],
+Cell[99710, 2374, 3269, 79, 39, "Input",ExpressionUUID->"d189e8b4-3964-4c06-b899-18caaa3e6799"],
+Cell[CellGroupData[{
+Cell[103004, 2457, 716, 22, 30, "Input",ExpressionUUID->"c068e36d-7d61-4081-9f80-0cf0d3f696eb"],
+Cell[103723, 2481, 6183, 130, 199, "Output",ExpressionUUID->"12cd6805-f13b-4d32-94c5-6dda367c62b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[109943, 2616, 1092, 34, 30, "Input",ExpressionUUID->"a8849716-c83d-48be-986f-9eed045c2c11"],
+Cell[111038, 2652, 14133, 285, 412, "Output",ExpressionUUID->"d71991ec-8f4d-4d22-a65a-4ea1acdb203d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[125208, 2942, 4060, 93, 136, "Input",ExpressionUUID->"130fd491-0ca4-4fb7-a04a-952096f92652"],
+Cell[129271, 3037, 8361, 163, 82, "Output",ExpressionUUID->"1933bedb-aae6-45a8-9b7f-f7b70c436541"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[137669, 3205, 2892, 69, 67, "Input",ExpressionUUID->"12ac193d-7afc-4a78-a80a-b9ddd9a15746"],
+Cell[140564, 3276, 2864, 68, 42, "Output",ExpressionUUID->"4e253569-79da-48dc-b733-2b818caed72f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[143465, 3349, 4497, 99, 136, "Input",ExpressionUUID->"bfb00c18-b468-44e2-ae5c-48e995e3aad7"],
+Cell[147965, 3450, 8912, 171, 82, "Output",ExpressionUUID->"82d8da37-c7a8-4e7c-a854-1075681156cd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[156914, 3626, 223, 4, 30, "Input",ExpressionUUID->"13797ed6-5f74-4bb5-860b-6c33b7ebc909"],
+Cell[157140, 3632, 537, 14, 34, "Output",ExpressionUUID->"44fb732e-57d8-48c1-8503-c041f0b68b47"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[157714, 3651, 170, 3, 30, "Input",ExpressionUUID->"c1f80156-8957-4086-b1cf-59fe883b15e4"],
+Cell[157887, 3656, 1129, 24, 208, "Output",ExpressionUUID->"4cef5114-5d76-4f14-98d0-7aec3865c68a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[159053, 3685, 473, 13, 30, "Input",ExpressionUUID->"8fbde2c7-9e59-44b3-b444-04c11858379d"],
+Cell[159529, 3700, 890, 29, 34, "Output",ExpressionUUID->"153d8a48-712e-4648-b062-eb1107cb477d"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
