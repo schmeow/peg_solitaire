@@ -10,14 +10,65 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[       821,         34]
-NotebookOptionsPosition[       564,         21]
-NotebookOutlinePosition[       964,         37]
-CellTagsIndexPosition[       921,         34]
+NotebookDataLength[      4191,         91]
+NotebookOptionsPosition[      3595,         72]
+NotebookOutlinePosition[      3995,         88]
+CellTagsIndexPosition[      3952,         85]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["Analyzing Peg Solitaire Game Boards using Multiway Graphs", "Title",
+ CellChangeTimes->{{3.92900369896552*^9, 
+  3.9290037392960157`*^9}},ExpressionUUID->"fed5b4ab-18dd-4513-8d2d-\
+f67fa82a0735"],
+
+Cell[TextData[StyleBox["Peg Solitaire, also known as Cracker Barrel, is a \
+game played on a board consisting of a number of holes of which all but one \
+are filled with a peg. These boards are usually symmetrical, in shapes such \
+as equilateral  triangles or thick crosses. The goal of the game is to remove \
+all but one peg by jumping pegs over each other, from one side of a peg hole \
+to a free space, removing the peg which was jumped over.\n\n[graphic of basic \
+peg solitaire board (triangle and cross]\n\nThis project hopes to model \
+different game boards of peg solitaire, with different board shapes and \
+starting arrangements of pegs, and use their multiway graphs to find a board \
+shape in which there is only one possible solution, or where you must play a \
+perfect game to be able to win, and to see if there are board shapes wherein \
+the game is impossible to solve. ", "Text"]], "Abstract",
+ CellChangeTimes->{{3.898167551427641*^9, 3.898167560550928*^9}, {
+   3.898167628960744*^9, 3.898167637957055*^9}, 3.898176105267528*^9, {
+   3.898176184868981*^9, 3.898176266062628*^9}, {3.898176305304338*^9, 
+   3.898176354371187*^9}, {3.8981794772254257`*^9, 3.898179491894803*^9}, 
+   3.8981843556925573`*^9, {3.898191908195578*^9, 3.8981919167243032`*^9}, 
+   3.89826094755212*^9, {3.898261245509947*^9, 3.89826124594252*^9}, {
+   3.898261348755126*^9, 3.898261355377203*^9}, {3.898261399752654*^9, 
+   3.898261484377811*^9}, {3.8982615434434347`*^9, 3.8982615599672947`*^9}, {
+   3.898261632657072*^9, 3.898261633315382*^9}, {3.898261665818513*^9, 
+   3.898261666582992*^9}, {3.898261721422345*^9, 3.898261940325878*^9}, {
+   3.898261981666272*^9, 3.898261984138029*^9}, {3.898262128789689*^9, 
+   3.898262157871099*^9}, {3.898262208268936*^9, 3.898262291062636*^9}, {
+   3.898262332900077*^9, 3.8982623799172688`*^9}, {3.898262415552266*^9, 
+   3.898262448949891*^9}, {3.898262481022156*^9, 3.8982626570247917`*^9}, {
+   3.898262689698888*^9, 3.898262758367447*^9}, 3.92900357950875*^9, {
+   3.929003637435655*^9, 3.9290036385952883`*^9}, {3.929003784350978*^9, 
+   3.92900379121845*^9}, {3.929003836219985*^9, 3.929003852601037*^9}, {
+   3.929004258961443*^9, 3.9290044832254267`*^9}, {3.9290046799248457`*^9, 
+   3.929004787401122*^9}, {3.92900500159643*^9, 3.929005001755807*^9}},
+ CellID->1531438062,ExpressionUUID->"bd7a4a90-14d0-4c75-bd5c-a6e7b534cb83"],
+
+Cell["\<\
+References:
+https://writings.stephenwolfram.com/2022/06/games-and-puzzles-as-\
+multicomputational-systems/
+ https://mathworld.wolfram.com/PegSolitaire.html\
+\>", "Affiliation",
+ CellChangeTimes->{{3.929004142691476*^9, 3.9290041491984*^9}, {
+  3.929004200853854*^9, 3.9290042024476013`*^9}, {3.9290045895717373`*^9, 
+  3.929004589737974*^9}},ExpressionUUID->"9aae274d-ebd4-4388-989b-\
+07d3f98d2e81"]
+}, Open  ]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{451, Automatic}, {Automatic, 50}},
@@ -36,9 +87,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 201, 3, 98, "Title",ExpressionUUID->"fed5b4ab-18dd-4513-8d2d-f67fa82a0735"],
+Cell[787, 27, 2380, 31, 200, "Abstract",ExpressionUUID->"bd7a4a90-14d0-4c75-bd5c-a6e7b534cb83",
+ CellID->1531438062],
+Cell[3170, 60, 409, 9, 79, "Affiliation",ExpressionUUID->"9aae274d-ebd4-4388-989b-07d3f98d2e81"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
