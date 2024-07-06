@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[   1186523,      25273]
-NotebookOptionsPosition[   1158744,      24800]
-NotebookOutlinePosition[   1159175,      24817]
-CellTagsIndexPosition[   1159132,      24814]
+NotebookDataLength[   1248429,      26550]
+NotebookOptionsPosition[   1219902,      26063]
+NotebookOutlinePosition[   1220333,      26080]
+CellTagsIndexPosition[   1220290,      26077]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3884,17 +3884,18 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"ImageReflect", "[", "img1", "]"}], ",", 
              RowBox[{"270", "Degree"}]}], "]"}], ",", " ", "img2"}], "]"}], 
-         "]"}], "]"}], "==", "1"}]}], ",", "\[IndentingNewLine]", ",", 
-     "\[IndentingNewLine]", "True", ",", " ", "False"}], "]"}]}]}]], "Input",
+         "]"}], "]"}], "==", "1"}]}], ",", "\[IndentingNewLine]", "True", ",",
+      " ", "False"}], "]"}]}]}]], "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  InitializationCell->True,
  CellChangeTimes->{{3.929005364683988*^9, 3.929005493124709*^9}, {
    3.929005547989335*^9, 3.929005550668149*^9}, {3.9290056137480383`*^9, 
    3.929005618763009*^9}, {3.9290067528502*^9, 3.929006766587829*^9}, 
    3.9290089340154653`*^9, 3.929025493593215*^9, {3.92918284450567*^9, 
-   3.929183015668384*^9}, {3.929183486105393*^9, 3.9291835707625723`*^9}},
+   3.929183015668384*^9}, {3.929183486105393*^9, 3.9291835707625723`*^9}, {
+   3.929183769009162*^9, 3.929183781387333*^9}},
  CellLabel->
-  "In[785]:=",ExpressionUUID->"151dfda1-20c5-43ed-97cd-29955d4c1d5e"],
+  "In[791]:=",ExpressionUUID->"151dfda1-20c5-43ed-97cd-29955d4c1d5e"],
 
 Cell[BoxData[
  RowBox[{
@@ -3987,7 +3988,7 @@ Cell[BoxData[
    3.929025493594213*^9, 3.929025519334159*^9}, {3.929116921590788*^9, 
    3.929116923067382*^9}},
  CellLabel->
-  "In[787]:=",ExpressionUUID->"4a7b3753-b349-4d49-8510-f57835f140d2"]
+  "In[796]:=",ExpressionUUID->"4a7b3753-b349-4d49-8510-f57835f140d2"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4604,95 +4605,23 @@ PegSolitaireGraphics"|>]],
         RowBox[{
          RowBox[{"VertexList", "[", 
           RowBox[{"multiwaygraph", "[", 
-           RowBox[{"coords2", ",", "start2", ",", "moves2"}], "]"}], "]"}], 
-         "[", 
+           RowBox[{"coords", ",", "start", ",", "moves"}], "]"}], "]"}], "[", 
+         
          RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
         RowBox[{"Association", "[", 
          RowBox[{"Reverse", "/@", 
-          RowBox[{"Normal", "[", "coords2", "]"}]}], "]"}]}], "]"}]}], ";", 
+          RowBox[{"Normal", "[", "coords", "]"}]}], "]"}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
-     RowBox[{"allboards", " ", "=", 
-      RowBox[{"VertexList", "[", "graph", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"uniques", " ", "=", " ", 
-      RowBox[{"getUnique", "[", 
-       RowBox[{"Table", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{
-           InterpretationBox[
-            TagBox[
-             FrameBox[
-              PaneBox[GridBox[{
-                 {
-                  StyleBox[
-                   StyleBox[
-                    AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
-                    BoxBaselineShift->-0.25,
-                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
-                    FontColor->GrayLevel[0.45]],
-                   ShowStringCharacters->False,
-                   FontFamily->"Source Sans Pro Black",
-                   FontSize->0.65 Inherited,
-                   FontWeight->"Heavy",
-                   PrivateFontOptions->{"OperatorSubstitution"->False}], 
-                  StyleBox[
-                   RowBox[{
-                    
-                    StyleBox["\<\"PegSolitaireGraphics\"\>", 
-                    "ResourceFunctionLabel"], " "}],
-                   ShowAutoStyles->False,
-                   ShowStringCharacters->False,
-                   FontSize->0.9 Inherited,
-                   FontColor->GrayLevel[0.1]]}
-                },
-                GridBoxSpacings->{"Columns" -> {{0.25}}}],
-               Alignment->Left,
-               BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
-               BaselinePosition->Baseline,
-               FrameMargins->{{3, 0}, {0, 0}}],
-              Background->RGBColor[0.968627, 0.976471, 0.984314],
-              BaselinePosition->Baseline,
-              DefaultBaseStyle->{},
-              FrameMargins->{{0, 0}, {1, 1}},
-              FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
-              RoundingRadius->4],
-             {"FunctionResourceBox", 
-              GrayLevel[0.45], "\"PegSolitaireGraphics\""},
-             TagBoxNote->"FunctionResourceBox"],
-            ResourceFunction[
-             
-             ResourceObject[<|
-              "Name" -> "PegSolitaireGraphics", "UUID" -> 
-               "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
-               "Function", "ResourceLocations" -> {
-                 CloudObject[
-                 "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
-490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
-               "DocumentationLink" -> 
-               URL["https://www.wolframcloud.com/obj/wolframphysics/\
-MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
-               "FunctionLocation" -> 
-               CloudObject[
-                "https://www.wolframcloud.com/obj/wolframphysics/Resources/\
-490/490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], 
-               "ShortName" -> "PegSolitaireGraphics", "SymbolName" -> 
-               "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
-PegSolitaireGraphics"|>]],
-            Selectable->False], "[", 
-           RowBox[{"coordnames", "[", "boardcoords", "]"}], "]"}], "[", 
-          "state", "]"}], ",", 
-         RowBox[{"{", 
-          RowBox[{"state", ",", " ", "allboards"}], "}"}]}], "]"}], "]"}]}], 
-     ";", "\[IndentingNewLine]", 
      RowBox[{"VertexContract", "[", 
       RowBox[{"graph", ",", " ", 
-       RowBox[{"DeleteDuplicates", "[", 
-        RowBox[{"Select", "[", 
-         RowBox[{"allboards", ",", 
+       RowBox[{"Gather", "[", 
+        RowBox[{
+         RowBox[{"VertexList", "[", "graph", "]"}], ",", 
+         RowBox[{
           RowBox[{
-           RowBox[{
-            RowBox[{"Position", "[", 
-             RowBox[{"uniques", ",", " ", 
+           RowBox[{"compareImg", "[", 
+            RowBox[{
+             RowBox[{
               RowBox[{
                InterpretationBox[
                 TagBox[
@@ -4756,9 +4685,75 @@ Resources/490/490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"],
                    "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
 PegSolitaireGraphics"|>]],
                 Selectable->False], "[", 
-               RowBox[{"boardcoords", ",", "#"}], "]"}]}], "]"}], "!=", 
-            RowBox[{"{", "}"}]}], "&"}]}], "]"}], "]"}]}], "]"}]}]}], 
-   "\[IndentingNewLine]", "]"}]}]], "Input",
+               RowBox[{"coordnames", "[", "boardcoords", "]"}], "]"}], "[", 
+              "#1", "]"}], ",", " ", 
+             RowBox[{
+              RowBox[{
+               InterpretationBox[
+                TagBox[
+                 FrameBox[
+                  PaneBox[GridBox[{
+                    {
+                    StyleBox[
+                    StyleBox[
+                    AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                    BoxBaselineShift->-0.25,
+                    BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                    FontColor->GrayLevel[0.45]],
+                    ShowStringCharacters->False,
+                    FontFamily->"Source Sans Pro Black",
+                    FontSize->0.65 Inherited,
+                    FontWeight->"Heavy",
+                    PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                    StyleBox[
+                    RowBox[{
+                    
+                    StyleBox["\<\"PegSolitaireGraphics\"\>", 
+                    "ResourceFunctionLabel"], " "}],
+                    ShowAutoStyles->False,
+                    ShowStringCharacters->False,
+                    FontSize->0.9 Inherited,
+                    FontColor->GrayLevel[0.1]]}
+                    },
+                    GridBoxSpacings->{"Columns" -> {{0.25}}}],
+                   Alignment->Left,
+                   
+                   BaseStyle->{
+                    LineSpacing -> {0, 0}, LineBreakWithin -> False},
+                   BaselinePosition->Baseline,
+                   FrameMargins->{{3, 0}, {0, 0}}],
+                  Background->RGBColor[0.968627, 0.976471, 0.984314],
+                  BaselinePosition->Baseline,
+                  DefaultBaseStyle->{},
+                  FrameMargins->{{0, 0}, {1, 1}},
+                  FrameStyle->RGBColor[0.831373, 0.847059, 0.85098],
+                  RoundingRadius->4],
+                 {"FunctionResourceBox", 
+                  GrayLevel[0.45], "\"PegSolitaireGraphics\""},
+                 TagBoxNote->"FunctionResourceBox"],
+                ResourceFunction[
+                 
+                 ResourceObject[<|
+                  "Name" -> "PegSolitaireGraphics", "UUID" -> 
+                   "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+                   "Function", "ResourceLocations" -> {
+                    CloudObject[
+                    "https://www.wolframcloud.com/obj/wolframphysics/\
+Resources/490/490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+                   "DocumentationLink" -> 
+                   URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+                   "FunctionLocation" -> 
+                   CloudObject[
+                    "https://www.wolframcloud.com/obj/wolframphysics/\
+Resources/490/490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], 
+                   "ShortName" -> "PegSolitaireGraphics", "SymbolName" -> 
+                   "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]],
+                Selectable->False], "[", 
+               RowBox[{"coordnames", "[", "boardcoords", "]"}], "]"}], "[", 
+              "#2", "]"}]}], "]"}], " ", "==", "True"}], "&"}]}], "]"}]}], 
+      "]"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{
   3.929177747553862*^9, {3.92917784849638*^9, 3.9291781099299297`*^9}, {
    3.929178221197686*^9, 3.929178279360529*^9}, {3.9291783095569963`*^9, 
@@ -4772,13 +4767,92 @@ PegSolitaireGraphics"|>]],
    3.9291809706278687`*^9}, {3.9291810028247747`*^9, 
    3.9291810038355923`*^9}, {3.929181034968459*^9, 3.929181072663649*^9}, {
    3.929181105118937*^9, 3.92918111764154*^9}, {3.929182369567337*^9, 
-   3.9291823711036587`*^9}},ExpressionUUID->"aba89da5-e42f-421e-b690-\
-68167ea1cc92"],
+   3.9291823711036587`*^9}, {3.929263107763727*^9, 3.9292632055198917`*^9}, {
+   3.929263306280363*^9, 3.9292633644666452`*^9}, {3.929263439377544*^9, 
+   3.929263479817505*^9}, {3.9292639624148703`*^9, 3.929264056047667*^9}, {
+   3.9292642346148663`*^9, 3.929264236010173*^9}},
+ CellLabel->
+  "In[814]:=",ExpressionUUID->"aba89da5-e42f-421e-b690-68167ea1cc92"],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.9291788987332907`*^9, 
   3.929178900257576*^9}},ExpressionUUID->"9cd5d335-852d-4ff1-adf9-\
 c3cd55106a57"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"boardcoords", " ", "=", " ", 
+  RowBox[{"ReplacePart", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"VertexList", "[", 
+      RowBox[{"multiwaygraph", "[", 
+       RowBox[{"coords", ",", "start", ",", "moves"}], "]"}], "]"}], "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
+    RowBox[{"Association", "[", 
+     RowBox[{"Reverse", "/@", 
+      RowBox[{"Normal", "[", "coords", "]"}]}], "]"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"coordnames", "[", "boardcoords", "]"}]}], "Input",
+ CellChangeTimes->{{3.929264150050736*^9, 3.929264166109044*^9}},
+ CellLabel->
+  "In[812]:=",ExpressionUUID->"d7714f8e-ae42-431b-87f8-fc5c1c7e8557"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9292641575537443`*^9, 3.929264166506687*^9}},
+ CellLabel->
+  "Out[812]=",ExpressionUUID->"02b0d7e6-c21c-4eb4-ab47-cde055a52e26"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "1"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "3"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "4"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2"}], "}"}], "\[Rule]", "5"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "6"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"3", ",", "4"}], "}"}], "\[Rule]", "7"}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"4", ",", "2"}], "}"}], "\[Rule]", "8"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9292641575537443`*^9, 3.9292641665108557`*^9}},
+ CellLabel->
+  "Out[813]=",ExpressionUUID->"adda2489-3a41-472c-8164-e2f0868c5f26"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -6392,6 +6466,8 @@ Cell[BoxData[
   "Out[782]=",ExpressionUUID->"a1618fb5-9a2b-442e-a044-fa41148534a6"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"getUnique", "[", 
   RowBox[{"Table", "[", 
@@ -6463,7 +6539,480 @@ PegSolitaireGraphics"|>]],
      RowBox[{"state", ",", " ", "allboards2"}], "}"}]}], "]"}], 
   "]"}]], "Input",
  CellLabel->
-  "In[789]:=",ExpressionUUID->"f1966dc7-cc28-482c-9ca0-12052725725f"],
+  "In[792]:=",ExpressionUUID->"f1966dc7-cc28-482c-9ca0-12052725725f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]], ",", 
+   GraphicsBox[{
+     GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+      3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+      3.6666666666666665`}, {3.6666666666666665`, 3.6666666666666665`}}, 
+      {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+       TagBox[PolygonBox[{{1, 2, 4, 3}}],
+        Annotation[#, "Geometry"]& ]}], {
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+      {RGBColor[1, 0, 0], EdgeForm[None], 
+       DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+      {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+       DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+    BaseStyle->Directive[
+      GrayLevel[0.93], 
+      EdgeForm[
+       Directive[
+        GrayLevel[1], 
+        AbsoluteThickness[1]]]]]}], "}"}]], "Output",
+ CellChangeTimes->{3.929183703267201*^9, 3.929184038630583*^9},
+ CellLabel->
+  "Out[792]=",ExpressionUUID->"e3af169c-10d3-45ef-96a0-9ca72d8ac0bb"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -7831,10 +8380,13 @@ PegSolitaireGraphics"|>]][{{0, 0} -> 1, {-1, 1} -> 2, {1, 1} -> 3, {-2, 2} ->
   3.928934516910325*^9, {3.928934567629587*^9, 3.928934575206662*^9}, 
    3.92893846390091*^9, 3.9290255731030407`*^9},
  CellLabel->
-  "Out[616]=",ExpressionUUID->"4ea3d627-449f-45d9-a973-d863aa7b5911"],
+  "Out[616]=",ExpressionUUID->"4ea3d627-449f-45d9-a973-d863aa7b5911"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"multiwaygraph2", "[", 
+ RowBox[{"multiwaygraph", "[", 
   RowBox[{
    RowBox[{"{", 
     RowBox[{
@@ -7887,13 +8439,9 @@ Cell[BoxData[
       RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"7", ",", "8", ",", "9"}], "}"}]}], "}"}]}], "]"}]], "Input",
- CellGroupingRules->{"GroupTogetherGrouping", 10000.},
- CellChangeTimes->{{3.929009987763277*^9, 3.929010007304041*^9}, {
-   3.929010041015158*^9, 3.9290100793061743`*^9}, {3.929010213066242*^9, 
-   3.929010257781974*^9}, 3.929025573103243*^9, {3.929110855325543*^9, 
-   3.929110881122048*^9}, 3.929181451303999*^9},
+ CellChangeTimes->{3.92926306407829*^9},
  CellLabel->
-  "In[747]:=",ExpressionUUID->"7c8699d5-2eb5-483a-a3f8-c5ddac76ab73"],
+  "In[801]:=",ExpressionUUID->"935f6570-2791-4716-a5ea-f8a449e90d54"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -7911,16 +8459,14 @@ Cell[BoxData[
       0, 1, 1, 0, 0, 0, 1, 1, 1}, {1, 0, 1, 0, 0, 0, 0, 1, 1}, {1, 0, 1, 0, 0,
        1, 0, 0, 1}, {1, 0, 0, 0, 0, 0, 1, 1, 1}, {1, 0, 0, 0, 0, 1, 1, 0, 
       1}, {1, 0, 0, 1, 0, 0, 1, 0, 1}, {0, 0, 1, 0, 1, 0, 1, 0, 1}, {1, 1, 1, 
-      0, 0, 0, 0, 0, 1}, {1, 0, 1, 0, 0, 0, 1, 0, 0}}, {
-       SparseArray[
-       Automatic, {31, 31}, 0, {
-        1, {{0, 3, 6, 9, 11, 13, 17, 19, 21, 25, 27, 28, 29, 29, 30, 31, 33, 
-          36, 36, 37, 38, 39, 42, 43, 44, 44, 44, 45, 45, 46, 46, 46}, {{2}, {
-          3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {
-          15}, {16}, {17}, {18}, {18}, {20}, {13}, {19}, {16}, {18}, {21}, {
-          22}, {18}, {23}, {15}, {21}, {28}, {24}, {25}, {26}, {25}, {28}, {
-          29}, {30}, {25}, {27}, {26}, {29}, {30}, {26}, {31}, {31}, {31}}}, 
-         Pattern}], Null}, {AspectRatio -> 3, EdgeStyle -> {
+      0, 0, 0, 0, 0, 1}, {1, 0, 1, 0, 0, 0, 1, 0, 
+      0}}, {{{1, 2}, {1, 3}, {1, 4}, {2, 5}, {2, 6}, {2, 7}, {3, 8}, {3, 9}, {
+       3, 10}, {4, 11}, {4, 12}, {5, 13}, {5, 14}, {6, 15}, {6, 16}, {6, 
+       17}, {6, 18}, {8, 13}, {8, 19}, {11, 15}, {7, 20}, {7, 18}, {9, 21}, {
+       9, 16}, {9, 22}, {9, 18}, {10, 23}, {10, 18}, {12, 21}, {15, 24}, {20, 
+       25}, {23, 26}, {21, 27}, {16, 26}, {16, 25}, {14, 28}, {17, 29}, {17, 
+       28}, {17, 25}, {22, 29}, {22, 26}, {22, 30}, {19, 30}, {29, 31}, {27, 
+       31}, {24, 31}}, Null}, {AspectRatio -> 3, EdgeStyle -> {
          GrayLevel[0.5]}, 
        GraphLayout -> {
         "Dimension" -> 2, "VertexLayout" -> "LayeredDigraphEmbedding"}, 
@@ -7943,8 +8489,9 @@ MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic,
 490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
              "PegSolitaireGraphics", "SymbolName" -> 
              "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
-PegSolitaireGraphics"|>]][$CellContext`coords$723894][#2], #, Center, #3]& }, 
-       VertexSize -> {1.2}}]]}, 
+PegSolitaireGraphics"|>]][{{1, 1} -> 1, {2, 1} -> 2, {3, 1} -> 3, {1, 2} -> 
+            4, {2, 2} -> 5, {3, 2} -> 6, {1, 3} -> 7, {2, 3} -> 8, {3, 3} -> 
+            9}][#2], #, Center, #3]& }, VertexSize -> {1.2}}]]}, 
     TagBox[GraphicsGroupBox[{
        {GrayLevel[0.5], Opacity[0.7], Arrowheads[0.026058352402746], 
         ArrowBox[{
@@ -8411,6 +8958,7 @@ PegSolitaireGraphics"|>]][$CellContext`coords$723894][#2], #, Center, #3]& },
          "DynamicName",
          BoxID -> "VertexID$9"], 
         TagBox[InsetBox[
+          
           GraphicsBox[{
             GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
              3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
@@ -9206,13 +9754,728 @@ PegSolitaireGraphics"|>]][$CellContext`coords$723894][#2], #, Center, #3]& },
   DefaultBaseStyle->"NetworkGraphics",
   FormatType->TraditionalForm,
   FrameTicks->None,
-  ImageSize->{426.8045598447711, Automatic}]], "Output",
- CellGroupingRules->{"GroupTogetherGrouping", 10000.},
- CellChangeTimes->{{3.929010245938129*^9, 3.929010258240861*^9}, 
-   3.929025573103638*^9, {3.929110863042338*^9, 3.929110881540745*^9}, 
-   3.929181600862658*^9},
+  ImageSize->{327.01055964052284`, Automatic}]], "Output",
+ CellChangeTimes->{3.929263064726633*^9},
  CellLabel->
-  "Out[747]=",ExpressionUUID->"5f5d5c44-51ab-43db-acb8-2c8268bb6319"],
+  "Out[801]=",ExpressionUUID->"f828a4f6-49a8-4fad-a8b8-d6fe01e62b17"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"multiwaygraph2", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1"}], "}"}], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1"}], "}"}], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "1"}], "}"}], "\[Rule]", "3"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", "4"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}], "\[Rule]", "5"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "2"}], "}"}], "\[Rule]", "6"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}], "\[Rule]", "7"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3"}], "}"}], "\[Rule]", "8"}], ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}], "\[Rule]", "9"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1",
+      ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "5", ",", "9"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "4", ",", "7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "5", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "5", ",", "7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "6", ",", "9"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "8", ",", "9"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{{3.929009987763277*^9, 3.929010007304041*^9}, {
+   3.929010041015158*^9, 3.9290100793061743`*^9}, {3.929010213066242*^9, 
+   3.929010257781974*^9}, 3.929025573103243*^9, {3.929110855325543*^9, 
+   3.929110881122048*^9}, 3.929181451303999*^9, {3.9292635001932993`*^9, 
+   3.929263525889476*^9}},
+ CellLabel->
+  "In[815]:=",ExpressionUUID->"7c8699d5-2eb5-483a-a3f8-c5ddac76ab73"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{{0, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 0, 0, 1, 1, 1, 1, 1, 1}, {1, 1, 
+      1, 1, 0, 1, 1, 1, 0}, {1, 0, 1, 1, 0, 1, 0, 1, 1}, {1, 0, 1, 1, 1, 0, 1,
+       1, 0}, {1, 1, 0, 1, 0, 0, 1, 1, 1}, {0, 0, 1, 0, 0, 1, 1, 1, 1}, {1, 0,
+       1, 1, 0, 1, 1, 0, 0}, {0, 0, 1, 1, 0, 0, 1, 1, 1}, {1, 0, 1, 0, 0, 1, 
+      1, 1, 0}, {1, 0, 1, 1, 1, 0, 0, 0, 1}, {1, 0, 1, 0, 0, 0, 0, 1, 1}, {1, 
+      0, 1, 0, 0, 1, 0, 0, 1}, {0, 0, 1, 0, 1, 0, 1, 0, 1}, {1, 0, 1, 0, 0, 0,
+       1, 0, 0}}, {
+       SparseArray[
+       Automatic, {15, 15}, 0, {
+        1, {{0, 2, 4, 5, 7, 11, 12, 12, 13, 14, 15, 17, 18, 18, 19, 19}, {{
+          2}, {3}, {4}, {5}, {6}, {7}, {8}, {7}, {9}, {10}, {11}, {9}, {13}, {
+          12}, {13}, {13}, {14}, {15}, {15}}}, Pattern}], Null}, {
+      AspectRatio -> 3, EdgeStyle -> {
+         GrayLevel[0.5]}, 
+       GraphLayout -> {
+        "Dimension" -> 2, "VertexLayout" -> "LayeredDigraphEmbedding"}, 
+       PerformanceGoal -> "Quality", VertexShapeFunction -> {Inset[
+          ResourceFunction[
+           
+           ResourceObject[<|
+            "Name" -> "PegSolitaireGraphics", "UUID" -> 
+             "490b8f4e-270c-47eb-afb6-1eef382a4cb7", "ResourceType" -> 
+             "Function", "ResourceLocations" -> {
+               CloudObject[
+               "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7"]}, "Version" -> None, 
+             "DocumentationLink" -> 
+             URL["https://www.wolframcloud.com/obj/wolframphysics/\
+MultiwayGames/PegSolitaireGraphics"], "ExampleNotebookData" -> Automatic, 
+             "FunctionLocation" -> 
+             CloudObject[
+              "https://www.wolframcloud.com/obj/wolframphysics/Resources/490/\
+490b8f4e-270c-47eb-afb6-1eef382a4cb7/download/DefinitionData"], "ShortName" -> 
+             "PegSolitaireGraphics", "SymbolName" -> 
+             "FunctionRepository`$490b8f4e270c47ebafb61eef382a4cb7`\
+PegSolitaireGraphics"|>]][$CellContext`coords$9165759][#2], #, Center, #3]& },
+        VertexSize -> {1.2}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {GrayLevel[0.5], Opacity[0.7], Arrowheads[Medium], 
+        ArrowBox[{
+         DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+          "VertexID$2", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+          "VertexID$3", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+          "VertexID$4", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+          "VertexID$5", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+          "VertexID$6", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$4", Automatic, Center], DynamicLocation[
+          "VertexID$7", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$4", Automatic, Center], DynamicLocation[
+          "VertexID$8", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$7", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$9", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$10", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$11", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$6", Automatic, Center], DynamicLocation[
+          "VertexID$9", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$8", Automatic, Center], DynamicLocation[
+          "VertexID$13", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$9", Automatic, Center], DynamicLocation[
+          "VertexID$12", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$10", Automatic, Center], DynamicLocation[
+          "VertexID$13", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$11", Automatic, Center], DynamicLocation[
+          "VertexID$13", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$11", Automatic, Center], DynamicLocation[
+          "VertexID$14", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$12", Automatic, Center], DynamicLocation[
+          "VertexID$15", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$14", Automatic, Center], DynamicLocation[
+          "VertexID$15", Automatic, Center]}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 12.}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 9.6}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {2., 9.6}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 7.199999999999999}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$4"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 7.199999999999999}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$5"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {2., 7.199999999999999}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$6"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-1., 4.8}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$7"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {-2., 4.8}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$8"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {2., 4.8}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$9"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 4.8}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$10"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {1., 4.8}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$11"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {2., 2.4}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$12"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {0., 2.4}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$13"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{2, 2}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {1., 2.4}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$14"], 
+        TagBox[InsetBox[
+          
+          GraphicsBox[{
+            GraphicsComplexBox[{{0.3333333333333333, 0.3333333333333333}, {
+             3.6666666666666665`, 0.3333333333333333}, {0.3333333333333333, 
+             3.6666666666666665`}, {3.6666666666666665`, 
+             3.6666666666666665`}}, 
+             {GrayLevel[0.93], EdgeForm[{GrayLevel[1], AbsoluteThickness[1]}], 
+              TagBox[PolygonBox[{{1, 2, 4, 3}}],
+               Annotation[#, "Geometry"]& ]}], {
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 1}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{3, 1}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{1, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 2}, NCache[Rational[1, 5], 0.2]]}, 
+             {RGBColor[1, 0, 0], EdgeForm[None], 
+              DiskBox[{1, 3}, NCache[Rational[1, 3], 0.3333333333333333]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{2, 3}, NCache[Rational[1, 5], 0.2]]}, 
+             {GrayLevel[0.8], EdgeForm[GrayLevel[0.75]], 
+              DiskBox[{3, 3}, NCache[Rational[1, 5], 0.2]]}}},
+           BaseStyle->Directive[
+             GrayLevel[0.93], 
+             EdgeForm[
+              Directive[
+               GrayLevel[1], 
+               AbsoluteThickness[1]]]]], {1., 0.}, Center, {0.6, 0.6}],
+         "DynamicName",
+         BoxID -> "VertexID$15"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
+ CellChangeTimes->{3.92926390143864*^9, 3.9292640737481337`*^9, 
+  3.929264593462596*^9},
+ CellLabel->
+  "Out[815]=",ExpressionUUID->"ddfb7b76-e117-4f1b-b831-607c44a6331d"],
 
 Cell[BoxData[
  RowBox[{"multiwaygraph", "[", 
@@ -16379,7 +17642,7 @@ PegSolitaireGraphics"|>]][{{0, 0} -> 1, {-1, 1} -> 2, {1, 1} -> 3, {-2, 2} ->
   DefaultBaseStyle->"NetworkGraphics",
   FormatType->TraditionalForm,
   FrameTicks->None,
-  ImageSize->{341.350768849206, Automatic}]], "Output",
+  ImageSize->{706.163268849206, Automatic}]], "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellChangeTimes->{3.929006419247244*^9, 3.929006585382666*^9, 
   3.929006656635387*^9, 3.929025657650043*^9},
@@ -24927,353 +26190,367 @@ Cell[166114, 3715, 3561, 69, 130, "Input",ExpressionUUID->"cc9eecff-5f17-4687-95
 Cell[169678, 3786, 469, 9, 42, "Output",ExpressionUUID->"65d47238-423c-409e-9564-6b18604eaa8e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[170184, 3800, 4003, 96, 344, "Input",ExpressionUUID->"151dfda1-20c5-43ed-97cd-29955d4c1d5e",
+Cell[170184, 3800, 4025, 97, 318, "Input",ExpressionUUID->"151dfda1-20c5-43ed-97cd-29955d4c1d5e",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  InitializationCell->True],
-Cell[174190, 3898, 1875, 44, 110, "Input",ExpressionUUID->"8dbe390b-7a81-4d85-b776-b82b48fbcdb3",
+Cell[174212, 3899, 1875, 44, 110, "Input",ExpressionUUID->"8dbe390b-7a81-4d85-b776-b82b48fbcdb3",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  InitializationCell->True],
-Cell[176068, 3944, 1920, 45, 165, "Input",ExpressionUUID->"4a7b3753-b349-4d49-8510-f57835f140d2",
+Cell[176090, 3945, 1920, 45, 136, "Input",ExpressionUUID->"4a7b3753-b349-4d49-8510-f57835f140d2",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[178025, 3994, 1097, 29, 37, "Input",ExpressionUUID->"f06d3bd1-a592-4aa4-8de8-4b1b385e7f7a"],
-Cell[179125, 4025, 5345, 106, 248, "Output",ExpressionUUID->"6da9de8e-6416-4b90-a17a-d8cc0046b639"]
+Cell[178047, 3995, 1097, 29, 37, "Input",ExpressionUUID->"f06d3bd1-a592-4aa4-8de8-4b1b385e7f7a"],
+Cell[179147, 4026, 5345, 106, 248, "Output",ExpressionUUID->"6da9de8e-6416-4b90-a17a-d8cc0046b639"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[184507, 4136, 3377, 68, 130, "Input",ExpressionUUID->"9ac895c1-f656-4e51-abec-95635ef6988c"],
-Cell[187887, 4206, 257, 4, 42, "Output",ExpressionUUID->"d7f0c683-354c-4a44-9e7e-3ec75e36efbc"]
+Cell[184529, 4137, 3377, 68, 130, "Input",ExpressionUUID->"9ac895c1-f656-4e51-abec-95635ef6988c"],
+Cell[187909, 4207, 257, 4, 42, "Output",ExpressionUUID->"d7f0c683-354c-4a44-9e7e-3ec75e36efbc"]
 }, Open  ]],
-Cell[188159, 4213, 152, 3, 37, "Input",ExpressionUUID->"de4e8cc8-c92b-4842-9f8d-f0a4a4e12c27"]
+Cell[188181, 4214, 152, 3, 37, "Input",ExpressionUUID->"de4e8cc8-c92b-4842-9f8d-f0a4a4e12c27"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[188348, 4221, 188, 3, 56, "Subsubsection",ExpressionUUID->"8243b544-2be8-41d8-ba7d-b71dba89c89d"],
+Cell[188370, 4222, 188, 3, 56, "Subsubsection",ExpressionUUID->"8243b544-2be8-41d8-ba7d-b71dba89c89d"],
 Cell[CellGroupData[{
-Cell[188561, 4228, 3700, 94, 43, "Input",ExpressionUUID->"5f6f2d76-254e-4b92-b67e-74fd76b4596b"],
-Cell[192264, 4324, 1707, 35, 470, "Output",ExpressionUUID->"1a0b959f-75b5-423f-a1d2-10de061b0ee6"]
+Cell[188583, 4229, 3700, 94, 43, "Input",ExpressionUUID->"5f6f2d76-254e-4b92-b67e-74fd76b4596b"],
+Cell[192286, 4325, 1707, 35, 470, "Output",ExpressionUUID->"1a0b959f-75b5-423f-a1d2-10de061b0ee6"]
 }, Open  ]],
-Cell[193986, 4362, 1096, 31, 64, "Input",ExpressionUUID->"d04086c2-ffe7-4e10-b81d-6d224e2fbd01"],
-Cell[195085, 4395, 5227, 105, 137, "Input",ExpressionUUID->"fbcdaa5c-7e6d-4cab-af4a-517bf62c1d2a",
+Cell[194008, 4363, 1096, 31, 64, "Input",ExpressionUUID->"d04086c2-ffe7-4e10-b81d-6d224e2fbd01"],
+Cell[195107, 4396, 5227, 105, 137, "Input",ExpressionUUID->"fbcdaa5c-7e6d-4cab-af4a-517bf62c1d2a",
  InitializationCell->True],
-Cell[200315, 4502, 12709, 273, 311, "Input",ExpressionUUID->"aba89da5-e42f-421e-b690-68167ea1cc92"],
-Cell[213027, 4777, 154, 3, 37, "Input",ExpressionUUID->"9cd5d335-852d-4ff1-adf9-c3cd55106a57"],
-Cell[213184, 4782, 3799, 83, 117, "Input",ExpressionUUID->"840f0d34-32b7-4e33-958e-0e434acd6a52"],
-Cell[216986, 4867, 1802, 54, 64, "Input",ExpressionUUID->"439f716e-949d-47a2-b6f3-861b4c17a0d6"],
+Cell[200337, 4503, 12843, 271, 284, "Input",ExpressionUUID->"aba89da5-e42f-421e-b690-68167ea1cc92"],
+Cell[213183, 4776, 154, 3, 37, "Input",ExpressionUUID->"9cd5d335-852d-4ff1-adf9-c3cd55106a57"],
 Cell[CellGroupData[{
-Cell[218813, 4925, 3823, 93, 199, "Input",ExpressionUUID->"5cf69df8-23b2-409c-b4f8-2fbfbcfb3625"],
-Cell[222639, 5020, 14701, 293, 514, "Output",ExpressionUUID->"316c6177-8676-4cc5-bb36-212594f06018"]
+Cell[213362, 4783, 671, 16, 64, "Input",ExpressionUUID->"d7714f8e-ae42-431b-87f8-fc5c1c7e8557"],
+Cell[214036, 4801, 676, 21, 42, "Output",ExpressionUUID->"02b0d7e6-c21c-4eb4-ab47-cde055a52e26"],
+Cell[214715, 4824, 934, 29, 42, "Output",ExpressionUUID->"adda2489-3a41-472c-8164-e2f0868c5f26"]
 }, Open  ]],
-Cell[237355, 5316, 2149, 57, 116, "Input",ExpressionUUID->"b616fb5a-4731-4e6e-ae01-3904c05bd007"],
+Cell[215664, 4856, 3799, 83, 117, "Input",ExpressionUUID->"840f0d34-32b7-4e33-958e-0e434acd6a52"],
+Cell[219466, 4941, 1802, 54, 64, "Input",ExpressionUUID->"439f716e-949d-47a2-b6f3-861b4c17a0d6"],
 Cell[CellGroupData[{
-Cell[239529, 5377, 213, 4, 37, "Input",ExpressionUUID->"131b7e5d-dedc-44ce-9bbf-46f5259a8da8"],
-Cell[239745, 5383, 652, 21, 42, "Output",ExpressionUUID->"6d556f20-e719-4d0b-8640-96bdb72dfda2"]
+Cell[221293, 4999, 3823, 93, 199, "Input",ExpressionUUID->"5cf69df8-23b2-409c-b4f8-2fbfbcfb3625"],
+Cell[225119, 5094, 14701, 293, 514, "Output",ExpressionUUID->"316c6177-8676-4cc5-bb36-212594f06018"]
 }, Open  ]],
-Cell[240412, 5407, 190, 3, 44, "Text",ExpressionUUID->"33dc591b-c8bc-499c-8baa-744c4dadab3d"],
-Cell[240605, 5412, 2106, 60, 64, "Input",ExpressionUUID->"95b7178c-2e76-423f-a940-c31302a8920e"],
-Cell[242714, 5474, 2126, 63, 116, "Input",ExpressionUUID->"3f75c6b6-e271-4932-a4d1-e3b4d2531b57"],
-Cell[244843, 5539, 983, 23, 64, "Input",ExpressionUUID->"f214b16d-2ea0-4baf-bdc2-841af3b397b8"],
+Cell[239835, 5390, 2149, 57, 116, "Input",ExpressionUUID->"b616fb5a-4731-4e6e-ae01-3904c05bd007"],
 Cell[CellGroupData[{
-Cell[245851, 5566, 2997, 73, 47, "Input",ExpressionUUID->"287f5a8f-e430-4dac-a03b-f979ac36f36d"],
-Cell[248851, 5641, 36858, 750, 1046, "Output",ExpressionUUID->"a1618fb5-9a2b-442e-a044-fa41148534a6"]
+Cell[242009, 5451, 213, 4, 37, "Input",ExpressionUUID->"131b7e5d-dedc-44ce-9bbf-46f5259a8da8"],
+Cell[242225, 5457, 652, 21, 42, "Output",ExpressionUUID->"6d556f20-e719-4d0b-8640-96bdb72dfda2"]
 }, Open  ]],
-Cell[285724, 6394, 2906, 71, 47, "Input",ExpressionUUID->"f1966dc7-cc28-482c-9ca0-12052725725f"],
+Cell[242892, 5481, 190, 3, 44, "Text",ExpressionUUID->"33dc591b-c8bc-499c-8baa-744c4dadab3d"],
+Cell[243085, 5486, 2106, 60, 64, "Input",ExpressionUUID->"95b7178c-2e76-423f-a940-c31302a8920e"],
+Cell[245194, 5548, 2126, 63, 116, "Input",ExpressionUUID->"3f75c6b6-e271-4932-a4d1-e3b4d2531b57"],
+Cell[247323, 5613, 983, 23, 64, "Input",ExpressionUUID->"f214b16d-2ea0-4baf-bdc2-841af3b397b8"],
 Cell[CellGroupData[{
-Cell[288655, 6469, 238, 5, 37, "Input",ExpressionUUID->"5a5a492b-7c1e-4506-bf58-43ce8ed37e8c"],
-Cell[288896, 6476, 21299, 399, 561, "Output",ExpressionUUID->"ea4c40ff-5924-41eb-bd6c-ee8b4f7d64ea"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[310232, 6880, 299, 6, 37, "Input",ExpressionUUID->"f43bdb01-d618-40d7-a5d8-2a0125348d1a"],
-Cell[310534, 6888, 1348, 41, 69, "Output",ExpressionUUID->"02902109-6620-44d0-8f43-72af27ac5724"]
+Cell[248331, 5640, 2997, 73, 47, "Input",ExpressionUUID->"287f5a8f-e430-4dac-a03b-f979ac36f36d"],
+Cell[251331, 5715, 36858, 750, 1046, "Output",ExpressionUUID->"a1618fb5-9a2b-442e-a044-fa41148534a6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[311919, 6934, 583, 11, 37, "Input",ExpressionUUID->"1c653924-2370-4ce4-ac03-1aae10967e57",
+Cell[288226, 6470, 2906, 71, 47, "Input",ExpressionUUID->"f1966dc7-cc28-482c-9ca0-12052725725f"],
+Cell[291135, 6543, 23095, 470, 780, "Output",ExpressionUUID->"e3af169c-10d3-45ef-96a0-9ca72d8ac0bb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[314267, 7018, 238, 5, 37, "Input",ExpressionUUID->"5a5a492b-7c1e-4506-bf58-43ce8ed37e8c"],
+Cell[314508, 7025, 21299, 399, 561, "Output",ExpressionUUID->"ea4c40ff-5924-41eb-bd6c-ee8b4f7d64ea"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[335844, 7429, 299, 6, 37, "Input",ExpressionUUID->"f43bdb01-d618-40d7-a5d8-2a0125348d1a"],
+Cell[336146, 7437, 1348, 41, 69, "Output",ExpressionUUID->"02902109-6620-44d0-8f43-72af27ac5724"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[337531, 7483, 583, 11, 37, "Input",ExpressionUUID->"1c653924-2370-4ce4-ac03-1aae10967e57",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[312505, 6947, 21959, 407, 881, "Output",ExpressionUUID->"a8d7c596-f695-4432-a03a-834b935c6fe0",
+Cell[338117, 7496, 21959, 407, 881, "Output",ExpressionUUID->"a8d7c596-f695-4432-a03a-834b935c6fe0",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[334467, 7356, 460, 11, 37, "Input",ExpressionUUID->"fe76c5b1-f145-43f3-950d-8b918d4ca528",
+Cell[360079, 7905, 460, 11, 37, "Input",ExpressionUUID->"fe76c5b1-f145-43f3-950d-8b918d4ca528",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[334930, 7369, 8296, 157, 561, "Output",ExpressionUUID->"4b21dd8f-0758-47e4-a9b5-a7ee7a0ee85a",
+Cell[360542, 7918, 8296, 157, 561, "Output",ExpressionUUID->"4b21dd8f-0758-47e4-a9b5-a7ee7a0ee85a",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[343229, 7528, 1425, 41, 37, "Input",ExpressionUUID->"a073dd81-0a2e-4dda-ae0f-2a37a86d412b",
+Cell[368841, 8077, 1425, 41, 37, "Input",ExpressionUUID->"a073dd81-0a2e-4dda-ae0f-2a37a86d412b",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[344657, 7571, 12955, 262, 561, "Output",ExpressionUUID->"4ea3d627-449f-45d9-a973-d863aa7b5911",
+Cell[370269, 8120, 12955, 262, 561, "Output",ExpressionUUID->"4ea3d627-449f-45d9-a973-d863aa7b5911",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[383261, 8387, 1868, 56, 64, "Input",ExpressionUUID->"935f6570-2791-4716-a5ea-f8a449e90d54"],
+Cell[385132, 8445, 68319, 1314, 1201, "Output",ExpressionUUID->"f828a4f6-49a8-4fad-a8b8-d6fe01e62b17"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[453488, 9764, 2197, 61, 64, "Input",ExpressionUUID->"7c8699d5-2eb5-483a-a3f8-c5ddac76ab73",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[357615, 7835, 2145, 60, 64, "Input",ExpressionUUID->"7c8699d5-2eb5-483a-a3f8-c5ddac76ab73",
+Cell[455688, 9827, 33662, 650, 581, "Output",ExpressionUUID->"ddfb7b76-e117-4f1b-b831-607c44a6331d",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[359763, 7897, 68429, 1317, 1559, "Output",ExpressionUUID->"5f5d5c44-51ab-43db-acb8-2c8268bb6319",
+Cell[489353, 10479, 2013, 56, 64, "Input",ExpressionUUID->"d2761f5a-5ac2-4f72-ad1e-404a30087d06",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[428195, 9216, 2013, 56, 64, "Input",ExpressionUUID->"d2761f5a-5ac2-4f72-ad1e-404a30087d06",
+Cell[491369, 10537, 230560, 4062, 2593, 99439, 1911, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"9bc0b107-0c87-4ed7-baf3-75f48eb6e096",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[430211, 9274, 230560, 4062, 2593, 99439, 1911, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"9bc0b107-0c87-4ed7-baf3-75f48eb6e096",
+Cell[721932, 14601, 2403, 69, 64, "Input",ExpressionUUID->"d96e7fdb-c420-4bac-afc8-529e5279cc3a",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[660774, 13338, 2403, 69, 64, "Input",ExpressionUUID->"d96e7fdb-c420-4bac-afc8-529e5279cc3a",
- CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[663180, 13409, 154676, 2977, 1266, "Output",ExpressionUUID->"af311fdb-ee46-4a9b-a58f-8700f8049d0f",
+Cell[724338, 14672, 154676, 2977, 2597, "Output",ExpressionUUID->"af311fdb-ee46-4a9b-a58f-8700f8049d0f",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[817905, 16392, 177, 3, 56, "Subsubsection",ExpressionUUID->"973d4480-3539-49c0-966e-13f8d54164b8"],
+Cell[879063, 17655, 177, 3, 56, "Subsubsection",ExpressionUUID->"973d4480-3539-49c0-966e-13f8d54164b8"],
 Cell[CellGroupData[{
-Cell[818107, 16399, 361, 10, 37, "Input",ExpressionUUID->"045d91a1-e882-4b2f-a76d-245d3f9d5c27"],
-Cell[818471, 16411, 179, 3, 42, "Output",ExpressionUUID->"10910165-b54b-4377-8fad-2fa7fe14eef4"]
+Cell[879265, 17662, 361, 10, 37, "Input",ExpressionUUID->"045d91a1-e882-4b2f-a76d-245d3f9d5c27"],
+Cell[879629, 17674, 179, 3, 42, "Output",ExpressionUUID->"10910165-b54b-4377-8fad-2fa7fe14eef4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[818687, 16419, 929, 18, 37, "Input",ExpressionUUID->"63f26bce-b848-4ade-ac8b-b2223c568c70"],
-Cell[819619, 16439, 735, 11, 42, "Output",ExpressionUUID->"d522b5e0-7ef4-43f7-8a70-3a232169d7ef"]
+Cell[879845, 17682, 929, 18, 37, "Input",ExpressionUUID->"63f26bce-b848-4ade-ac8b-b2223c568c70"],
+Cell[880777, 17702, 735, 11, 42, "Output",ExpressionUUID->"d522b5e0-7ef4-43f7-8a70-3a232169d7ef"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[820391, 16455, 585, 19, 37, "Input",ExpressionUUID->"69adcc3c-5b9b-41ee-bf66-c718887a9638"],
-Cell[820979, 16476, 153, 3, 42, "Output",ExpressionUUID->"a930853d-f1ec-4ec3-a27c-66f9737caace"]
+Cell[881549, 17718, 585, 19, 37, "Input",ExpressionUUID->"69adcc3c-5b9b-41ee-bf66-c718887a9638"],
+Cell[882137, 17739, 153, 3, 42, "Output",ExpressionUUID->"a930853d-f1ec-4ec3-a27c-66f9737caace"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[821169, 16484, 2055, 66, 168, "Input",ExpressionUUID->"e6cf2a71-b821-4707-9581-5c1c6854941c"],
-Cell[823227, 16552, 321, 5, 42, "Output",ExpressionUUID->"8590f566-93a5-43ce-865c-476a1a182215"]
+Cell[882327, 17747, 2055, 66, 168, "Input",ExpressionUUID->"e6cf2a71-b821-4707-9581-5c1c6854941c"],
+Cell[884385, 17815, 321, 5, 42, "Output",ExpressionUUID->"8590f566-93a5-43ce-865c-476a1a182215"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[823585, 16562, 275, 7, 37, "Input",ExpressionUUID->"9e22a980-9f60-4a0d-b8d9-9f8cb8775039"],
-Cell[823863, 16571, 177, 3, 42, "Output",ExpressionUUID->"c16ae845-c321-4131-8102-45002bb053d1"]
+Cell[884743, 17825, 275, 7, 37, "Input",ExpressionUUID->"9e22a980-9f60-4a0d-b8d9-9f8cb8775039"],
+Cell[885021, 17834, 177, 3, 42, "Output",ExpressionUUID->"c16ae845-c321-4131-8102-45002bb053d1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[824077, 16579, 1323, 42, 37, "Input",ExpressionUUID->"681f78b7-f51e-4629-b64a-25a395eedee1"],
-Cell[825403, 16623, 192, 3, 42, "Output",ExpressionUUID->"35d35db0-3b2c-472d-b73b-72d853eaac9f"]
+Cell[885235, 17842, 1323, 42, 37, "Input",ExpressionUUID->"681f78b7-f51e-4629-b64a-25a395eedee1"],
+Cell[886561, 17886, 192, 3, 42, "Output",ExpressionUUID->"35d35db0-3b2c-472d-b73b-72d853eaac9f"]
 }, Open  ]],
-Cell[825610, 16629, 1937, 41, 84, "Input",ExpressionUUID->"71eee1cd-a0a5-47a3-ba0f-781a3fa1074d",
+Cell[886768, 17892, 1937, 41, 84, "Input",ExpressionUUID->"71eee1cd-a0a5-47a3-ba0f-781a3fa1074d",
  InitializationCell->True],
-Cell[827550, 16672, 1621, 43, 110, "Input",ExpressionUUID->"c2bb40b2-778d-48b7-ac68-c5d3c3ed3495",
- InitializationCell->True],
-Cell[CellGroupData[{
-Cell[829196, 16719, 2617, 77, 64, "Input",ExpressionUUID->"89c45726-8c47-4a5a-8229-33355ec8a433"],
-Cell[831816, 16798, 934, 18, 42, "Output",ExpressionUUID->"5c46198f-cf69-4f40-84f5-bf8c358c3fba"]
-}, Open  ]],
-Cell[832765, 16819, 3171, 82, 162, "Input",ExpressionUUID->"a0ebf4c4-22e3-4da3-8d22-9239563c8cfd",
+Cell[888708, 17935, 1621, 43, 110, "Input",ExpressionUUID->"c2bb40b2-778d-48b7-ac68-c5d3c3ed3495",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[835961, 16905, 1537, 46, 37, "Input",ExpressionUUID->"c374a923-20ca-4d15-ac00-fc65843f61f1"],
-Cell[837501, 16953, 1173, 30, 42, "Output",ExpressionUUID->"42734b19-b1b1-4e1a-aa1f-0e09563f6b06"]
+Cell[890354, 17982, 2617, 77, 64, "Input",ExpressionUUID->"89c45726-8c47-4a5a-8229-33355ec8a433"],
+Cell[892974, 18061, 934, 18, 42, "Output",ExpressionUUID->"5c46198f-cf69-4f40-84f5-bf8c358c3fba"]
 }, Open  ]],
-Cell[838689, 16986, 1495, 35, 136, "Input",ExpressionUUID->"ca082d46-151c-41a2-84aa-6d09e3d6c5f2",
+Cell[893923, 18082, 3171, 82, 162, "Input",ExpressionUUID->"a0ebf4c4-22e3-4da3-8d22-9239563c8cfd",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[840209, 17025, 1293, 39, 64, "Input",ExpressionUUID->"8e488a78-0090-4e35-be15-d17ae8b54d46"],
-Cell[841505, 17066, 1408, 39, 113, "Output",ExpressionUUID->"3ca2c093-a803-4f02-8fef-5d43bfb72558"]
+Cell[897119, 18168, 1537, 46, 37, "Input",ExpressionUUID->"c374a923-20ca-4d15-ac00-fc65843f61f1"],
+Cell[898659, 18216, 1173, 30, 42, "Output",ExpressionUUID->"42734b19-b1b1-4e1a-aa1f-0e09563f6b06"]
 }, Open  ]],
-Cell[842928, 17108, 1608, 49, 64, "Input",ExpressionUUID->"0e96924a-e1ec-48bd-9e0c-8f063fcd1a46"],
-Cell[CellGroupData[{
-Cell[844561, 17161, 1604, 48, 64, "Input",ExpressionUUID->"3ebd872d-bf37-4294-aa56-635613395890"],
-Cell[846168, 17211, 1500, 43, 69, "Output",ExpressionUUID->"84e50e38-85c5-49cd-b2ef-b7397526134d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[847705, 17259, 1484, 45, 37, "Input",ExpressionUUID->"7d81650e-98fd-4d4d-9013-833f61fda65a"],
-Cell[849192, 17306, 527, 13, 42, "Output",ExpressionUUID->"2a4399ac-6d6c-400e-8007-7f0a30acbf3c"]
-}, Open  ]],
-Cell[849734, 17322, 947, 22, 84, "Input",ExpressionUUID->"6aa48caa-7a7b-4176-8ec4-9b8b9b37c70a",
+Cell[899847, 18249, 1495, 35, 136, "Input",ExpressionUUID->"ca082d46-151c-41a2-84aa-6d09e3d6c5f2",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[850706, 17348, 992, 31, 37, "Input",ExpressionUUID->"2990892d-7d38-4537-800c-18ce7bbcfa2d"],
-Cell[851701, 17381, 419, 9, 255, "Output",ExpressionUUID->"132e1292-9154-43c2-94d2-6e6f23c4f9f0"]
+Cell[901367, 18288, 1293, 39, 64, "Input",ExpressionUUID->"8e488a78-0090-4e35-be15-d17ae8b54d46"],
+Cell[902663, 18329, 1408, 39, 69, "Output",ExpressionUUID->"3ca2c093-a803-4f02-8fef-5d43bfb72558"]
+}, Open  ]],
+Cell[904086, 18371, 1608, 49, 64, "Input",ExpressionUUID->"0e96924a-e1ec-48bd-9e0c-8f063fcd1a46"],
+Cell[CellGroupData[{
+Cell[905719, 18424, 1604, 48, 64, "Input",ExpressionUUID->"3ebd872d-bf37-4294-aa56-635613395890"],
+Cell[907326, 18474, 1500, 43, 69, "Output",ExpressionUUID->"84e50e38-85c5-49cd-b2ef-b7397526134d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[852157, 17395, 711, 16, 156, "Input",ExpressionUUID->"e72ba18d-5b14-496c-b533-e93cf4a09f54"],
-Cell[852871, 17413, 51456, 1143, 255, "Output",ExpressionUUID->"84cddd76-79b7-4161-889f-a5ccc8ae6103"]
+Cell[908863, 18522, 1484, 45, 37, "Input",ExpressionUUID->"7d81650e-98fd-4d4d-9013-833f61fda65a"],
+Cell[910350, 18569, 527, 13, 42, "Output",ExpressionUUID->"2a4399ac-6d6c-400e-8007-7f0a30acbf3c"]
 }, Open  ]],
-Cell[904342, 18559, 321, 7, 37, "Input",ExpressionUUID->"4dd9d741-5b4a-4d23-9d51-ee33bb99c910"],
+Cell[910892, 18585, 947, 22, 84, "Input",ExpressionUUID->"6aa48caa-7a7b-4176-8ec4-9b8b9b37c70a",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[904688, 18570, 213, 4, 44, "Text",ExpressionUUID->"1d51d61c-12ba-4b57-8369-c213f45fc06e",
+Cell[911864, 18611, 992, 31, 37, "Input",ExpressionUUID->"2990892d-7d38-4537-800c-18ce7bbcfa2d"],
+Cell[912859, 18644, 419, 9, 255, "Output",ExpressionUUID->"132e1292-9154-43c2-94d2-6e6f23c4f9f0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[913315, 18658, 711, 16, 156, "Input",ExpressionUUID->"e72ba18d-5b14-496c-b533-e93cf4a09f54"],
+Cell[914029, 18676, 51456, 1143, 255, "Output",ExpressionUUID->"84cddd76-79b7-4161-889f-a5ccc8ae6103"]
+}, Open  ]],
+Cell[965500, 19822, 321, 7, 37, "Input",ExpressionUUID->"4dd9d741-5b4a-4d23-9d51-ee33bb99c910"],
+Cell[CellGroupData[{
+Cell[965846, 19833, 213, 4, 44, "Text",ExpressionUUID->"1d51d61c-12ba-4b57-8369-c213f45fc06e",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[904904, 18576, 20399, 617, 526, "Input",ExpressionUUID->"75b0d084-4029-4cc5-b50e-996a8907dc87",
+Cell[966062, 19839, 20399, 617, 526, "Input",ExpressionUUID->"75b0d084-4029-4cc5-b50e-996a8907dc87",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  InitializationCell->True],
-Cell[925306, 19195, 2252, 48, 287, "Output",ExpressionUUID->"64a85460-ce11-420c-a737-16602a6788e0",
+Cell[986464, 20458, 2252, 48, 287, "Output",ExpressionUUID->"64a85460-ce11-420c-a737-16602a6788e0",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[927595, 19248, 211, 4, 38, "Text",ExpressionUUID->"e13f6a19-6aa0-4f0d-bc9b-7a79b04f6d71",
+Cell[988753, 20511, 211, 4, 38, "Text",ExpressionUUID->"e13f6a19-6aa0-4f0d-bc9b-7a79b04f6d71",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[927809, 19254, 35371, 970, 1528, "Text",ExpressionUUID->"ed2edfbc-2997-4350-bfa9-02272ba4b82c",
+Cell[988967, 20517, 35371, 970, 1528, "Text",ExpressionUUID->"ed2edfbc-2997-4350-bfa9-02272ba4b82c",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.},
  InitializationCell->True]
 }, Closed]],
-Cell[963195, 20227, 152, 3, 30, "Input",ExpressionUUID->"177d5dcf-d046-4cf2-8de7-eb5c975f8b54"],
+Cell[1024353, 21490, 152, 3, 31, "Input",ExpressionUUID->"177d5dcf-d046-4cf2-8de7-eb5c975f8b54"],
 Cell[CellGroupData[{
-Cell[963372, 20234, 496, 12, 56, "Input",ExpressionUUID->"9380ab75-30c8-4ec0-bd72-58122b81d84d",
+Cell[1024530, 21497, 496, 12, 57, "Input",ExpressionUUID->"9380ab75-30c8-4ec0-bd72-58122b81d84d",
  InitializationCell->True],
-Cell[963871, 20248, 11169, 225, 103, "Output",ExpressionUUID->"fbf79799-1dad-4a91-881a-8168ca94b1f6"]
+Cell[1025029, 21511, 11169, 225, 103, "Output",ExpressionUUID->"fbf79799-1dad-4a91-881a-8168ca94b1f6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[975077, 20478, 5132, 156, 116, "Input",ExpressionUUID->"6753d490-2ccb-4809-85f3-13c86336d63c"],
-Cell[980212, 20636, 802, 12, 61, "Output",ExpressionUUID->"74e96136-1062-4322-b1f1-e1ed8214ca39"]
+Cell[1036235, 21741, 5132, 156, 116, "Input",ExpressionUUID->"6753d490-2ccb-4809-85f3-13c86336d63c"],
+Cell[1041370, 21899, 802, 12, 42, "Output",ExpressionUUID->"74e96136-1062-4322-b1f1-e1ed8214ca39"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[981063, 20654, 241, 4, 56, "Subsubsection",ExpressionUUID->"8d0092b3-c414-4300-b80e-bc88d51a1959"],
+Cell[1042221, 21917, 241, 4, 56, "Subsubsection",ExpressionUUID->"8d0092b3-c414-4300-b80e-bc88d51a1959"],
 Cell[CellGroupData[{
-Cell[981329, 20662, 238, 4, 44, "Text",ExpressionUUID->"e7a9fd81-2a7f-4f2f-9398-dcc409c9027a",
+Cell[1042487, 21925, 238, 4, 44, "Text",ExpressionUUID->"e7a9fd81-2a7f-4f2f-9398-dcc409c9027a",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[981570, 20668, 734, 16, 37, "Input",ExpressionUUID->"cf63e096-a647-42ee-92a1-09dbb2634c76",
+Cell[1042728, 21931, 734, 16, 37, "Input",ExpressionUUID->"cf63e096-a647-42ee-92a1-09dbb2634c76",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->401354605],
-Cell[982307, 20686, 707, 14, 37, "Input",ExpressionUUID->"d805b3e5-4ba9-4429-9236-a66a1f870e7e",
+Cell[1043465, 21949, 707, 14, 37, "Input",ExpressionUUID->"d805b3e5-4ba9-4429-9236-a66a1f870e7e",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->553705057],
-Cell[983017, 20702, 958, 25, 116, "Input",ExpressionUUID->"868aa32c-cbf3-4968-8c05-3c25deb2ea74",
+Cell[1044175, 21965, 958, 25, 116, "Input",ExpressionUUID->"868aa32c-cbf3-4968-8c05-3c25deb2ea74",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->982574539],
-Cell[983978, 20729, 961, 25, 116, "Input",ExpressionUUID->"2bf68991-356b-4d66-968f-24190db9cadf",
+Cell[1045136, 21992, 961, 25, 116, "Input",ExpressionUUID->"2bf68991-356b-4d66-968f-24190db9cadf",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->757219635],
-Cell[984942, 20756, 1360, 36, 168, "Input",ExpressionUUID->"551fee2b-f4bb-4c42-a5eb-a5b50d8ee627",
+Cell[1046100, 22019, 1360, 36, 168, "Input",ExpressionUUID->"551fee2b-f4bb-4c42-a5eb-a5b50d8ee627",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->890269333],
-Cell[986305, 20794, 1974, 51, 220, "Input",ExpressionUUID->"77921ce8-e5be-40f2-a04e-ddbf18cad9fe",
+Cell[1047463, 22057, 1974, 51, 220, "Input",ExpressionUUID->"77921ce8-e5be-40f2-a04e-ddbf18cad9fe",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->61710837],
-Cell[988282, 20847, 585, 14, 37, "Input",ExpressionUUID->"45112e88-ec88-405f-a80b-21949ce80b4c",
+Cell[1049440, 22110, 585, 14, 37, "Input",ExpressionUUID->"45112e88-ec88-405f-a80b-21949ce80b4c",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->163436387],
-Cell[988870, 20863, 918, 23, 90, "Input",ExpressionUUID->"e5571535-e8a8-455a-a7aa-7e0ffcc866d0",
+Cell[1050028, 22126, 918, 23, 90, "Input",ExpressionUUID->"e5571535-e8a8-455a-a7aa-7e0ffcc866d0",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->654999463],
-Cell[989791, 20888, 1183, 30, 90, "Input",ExpressionUUID->"57f6b1e8-cfda-4d5d-ab9a-163146aa4b61",
+Cell[1050949, 22151, 1183, 30, 90, "Input",ExpressionUUID->"57f6b1e8-cfda-4d5d-ab9a-163146aa4b61",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->649585807],
-Cell[990977, 20920, 2905, 67, 300, "Input",ExpressionUUID->"7d83ceb3-ad5a-415f-9efd-3e80db245402",
+Cell[1052135, 22183, 2905, 67, 300, "Input",ExpressionUUID->"7d83ceb3-ad5a-415f-9efd-3e80db245402",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->177603212],
-Cell[993885, 20989, 3053, 70, 326, "Input",ExpressionUUID->"80468f2d-a17f-424a-879b-a8a52933927c",
+Cell[1055043, 22252, 3053, 70, 326, "Input",ExpressionUUID->"80468f2d-a17f-424a-879b-a8a52933927c",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->896114131],
-Cell[996941, 21061, 2949, 67, 300, "Input",ExpressionUUID->"1bd458d7-bf70-4d59-8b93-89703e73e473",
+Cell[1058099, 22324, 2949, 67, 300, "Input",ExpressionUUID->"1bd458d7-bf70-4d59-8b93-89703e73e473",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellID->737996237]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[999939, 21134, 171, 3, 56, "Subsubsection",ExpressionUUID->"0acab181-8a77-45d5-a78a-9107107d2c1a"],
+Cell[1061097, 22397, 171, 3, 56, "Subsubsection",ExpressionUUID->"0acab181-8a77-45d5-a78a-9107107d2c1a"],
 Cell[CellGroupData[{
-Cell[1000135, 21141, 3489, 91, 96, "Input",ExpressionUUID->"9cc03d97-2256-4c14-962c-62d632906271"],
-Cell[1003627, 21234, 1347, 29, 470, "Output",ExpressionUUID->"1e93987c-bf3e-4128-8a02-7324cc62cf9f"]
+Cell[1061293, 22404, 3489, 91, 96, "Input",ExpressionUUID->"9cc03d97-2256-4c14-962c-62d632906271"],
+Cell[1064785, 22497, 1347, 29, 470, "Output",ExpressionUUID->"1e93987c-bf3e-4128-8a02-7324cc62cf9f"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1005011, 21268, 3994, 106, 64, "Input",ExpressionUUID->"e181bc19-20c8-4dd8-a974-f79739ae92e4"],
-Cell[1009008, 21376, 2002, 42, 294, "Output",ExpressionUUID->"8f3552ba-ae19-44c6-b93f-625fce977042"]
+Cell[1066169, 22531, 3994, 106, 64, "Input",ExpressionUUID->"e181bc19-20c8-4dd8-a974-f79739ae92e4"],
+Cell[1070166, 22639, 2002, 42, 294, "Output",ExpressionUUID->"8f3552ba-ae19-44c6-b93f-625fce977042"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1011047, 21423, 1022, 26, 37, "Input",ExpressionUUID->"5553b47a-9808-4c03-8872-a62527fb42a6"],
-Cell[1012072, 21451, 803, 23, 42, "Output",ExpressionUUID->"b932d928-cc5b-454c-8330-59f5efa6b4b3"]
+Cell[1072205, 22686, 1022, 26, 37, "Input",ExpressionUUID->"5553b47a-9808-4c03-8872-a62527fb42a6"],
+Cell[1073230, 22714, 803, 23, 42, "Output",ExpressionUUID->"b932d928-cc5b-454c-8330-59f5efa6b4b3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1012912, 21479, 365, 10, 37, "Input",ExpressionUUID->"73d14101-350c-444e-be87-b27093fd6f4c"],
-Cell[1013280, 21491, 254, 5, 42, "Output",ExpressionUUID->"4d5d8f3c-beea-4820-aefe-f376bcfc1b65"]
+Cell[1074070, 22742, 365, 10, 37, "Input",ExpressionUUID->"73d14101-350c-444e-be87-b27093fd6f4c"],
+Cell[1074438, 22754, 254, 5, 42, "Output",ExpressionUUID->"4d5d8f3c-beea-4820-aefe-f376bcfc1b65"]
 }, Open  ]],
-Cell[1013549, 21499, 3321, 80, 47, "Input",ExpressionUUID->"d189e8b4-3964-4c06-b899-18caaa3e6799"],
+Cell[1074707, 22762, 3321, 80, 47, "Input",ExpressionUUID->"d189e8b4-3964-4c06-b899-18caaa3e6799"],
 Cell[CellGroupData[{
-Cell[1016895, 21583, 770, 23, 37, "Input",ExpressionUUID->"c068e36d-7d61-4081-9f80-0cf0d3f696eb"],
-Cell[1017668, 21608, 6230, 131, 247, "Output",ExpressionUUID->"3918023f-9ba1-4da8-91d1-968411a565a8"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1023935, 21744, 1226, 34, 37, "Input",ExpressionUUID->"a8849716-c83d-48be-986f-9eed045c2c11"],
-Cell[1025164, 21780, 12282, 248, 248, "Output",ExpressionUUID->"1f91d42f-9007-4e42-ae65-3256e1d8df18"]
+Cell[1078053, 22846, 770, 23, 37, "Input",ExpressionUUID->"c068e36d-7d61-4081-9f80-0cf0d3f696eb"],
+Cell[1078826, 22871, 6230, 131, 247, "Output",ExpressionUUID->"3918023f-9ba1-4da8-91d1-968411a565a8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1037483, 22033, 1526, 44, 37, "Input",ExpressionUUID->"94e5dfd6-1ba4-4124-83a5-a8ba053688e7"],
-Cell[1039012, 22079, 18044, 366, 331, "Output",ExpressionUUID->"f369d237-4e74-4c4c-9228-d746475a1990"]
+Cell[1085093, 23007, 1226, 34, 37, "Input",ExpressionUUID->"a8849716-c83d-48be-986f-9eed045c2c11"],
+Cell[1086322, 23043, 12282, 248, 248, "Output",ExpressionUUID->"1f91d42f-9007-4e42-ae65-3256e1d8df18"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1057093, 22450, 859, 27, 37, "Input",ExpressionUUID->"43cc7ae7-b61b-4152-b658-207942ab6455"],
-Cell[1057955, 22479, 8116, 173, 167, "Output",ExpressionUUID->"27a00302-5e1d-4a5e-a450-d1776a540b70"]
-}, Open  ]],
-Cell[1066086, 22655, 488, 13, 37, "Input",ExpressionUUID->"4715c639-fbe5-4470-82ba-8a26ab7f4686"],
-Cell[CellGroupData[{
-Cell[1066599, 22672, 650, 21, 37, "Input",ExpressionUUID->"4dc5ce2b-5989-4d0e-ae0a-72d0177cdc1c"],
-Cell[1067252, 22695, 626, 16, 42, "Output",ExpressionUUID->"5b07dfba-2bd7-45bf-a7a7-47e25cffe41f"]
+Cell[1098641, 23296, 1526, 44, 37, "Input",ExpressionUUID->"94e5dfd6-1ba4-4124-83a5-a8ba053688e7"],
+Cell[1100170, 23342, 18044, 366, 331, "Output",ExpressionUUID->"f369d237-4e74-4c4c-9228-d746475a1990"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1067915, 22716, 4060, 93, 170, "Input",ExpressionUUID->"130fd491-0ca4-4fb7-a04a-952096f92652"],
-Cell[1071978, 22811, 8361, 163, 102, "Output",ExpressionUUID->"1933bedb-aae6-45a8-9b7f-f7b70c436541"]
+Cell[1118251, 23713, 859, 27, 37, "Input",ExpressionUUID->"43cc7ae7-b61b-4152-b658-207942ab6455"],
+Cell[1119113, 23742, 8116, 173, 167, "Output",ExpressionUUID->"27a00302-5e1d-4a5e-a450-d1776a540b70"]
+}, Open  ]],
+Cell[1127244, 23918, 488, 13, 37, "Input",ExpressionUUID->"4715c639-fbe5-4470-82ba-8a26ab7f4686"],
+Cell[CellGroupData[{
+Cell[1127757, 23935, 650, 21, 37, "Input",ExpressionUUID->"4dc5ce2b-5989-4d0e-ae0a-72d0177cdc1c"],
+Cell[1128410, 23958, 626, 16, 42, "Output",ExpressionUUID->"5b07dfba-2bd7-45bf-a7a7-47e25cffe41f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1080376, 22979, 2892, 69, 83, "Input",ExpressionUUID->"12ac193d-7afc-4a78-a80a-b9ddd9a15746"],
-Cell[1083271, 23050, 2864, 68, 52, "Output",ExpressionUUID->"4e253569-79da-48dc-b733-2b818caed72f"]
+Cell[1129073, 23979, 4060, 93, 170, "Input",ExpressionUUID->"130fd491-0ca4-4fb7-a04a-952096f92652"],
+Cell[1133136, 24074, 8361, 163, 102, "Output",ExpressionUUID->"1933bedb-aae6-45a8-9b7f-f7b70c436541"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1086172, 23123, 4497, 99, 170, "Input",ExpressionUUID->"bfb00c18-b468-44e2-ae5c-48e995e3aad7"],
-Cell[1090672, 23224, 8912, 171, 102, "Output",ExpressionUUID->"82d8da37-c7a8-4e7c-a854-1075681156cd"]
+Cell[1141534, 24242, 2892, 69, 83, "Input",ExpressionUUID->"12ac193d-7afc-4a78-a80a-b9ddd9a15746"],
+Cell[1144429, 24313, 2864, 68, 52, "Output",ExpressionUUID->"4e253569-79da-48dc-b733-2b818caed72f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1099621, 23400, 223, 4, 37, "Input",ExpressionUUID->"13797ed6-5f74-4bb5-860b-6c33b7ebc909"],
-Cell[1099847, 23406, 537, 14, 42, "Output",ExpressionUUID->"44fb732e-57d8-48c1-8503-c041f0b68b47"]
+Cell[1147330, 24386, 4497, 99, 170, "Input",ExpressionUUID->"bfb00c18-b468-44e2-ae5c-48e995e3aad7"],
+Cell[1151830, 24487, 8912, 171, 102, "Output",ExpressionUUID->"82d8da37-c7a8-4e7c-a854-1075681156cd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1100421, 23425, 170, 3, 37, "Input",ExpressionUUID->"c1f80156-8957-4086-b1cf-59fe883b15e4"],
-Cell[1100594, 23430, 1129, 24, 260, "Output",ExpressionUUID->"4cef5114-5d76-4f14-98d0-7aec3865c68a"]
+Cell[1160779, 24663, 223, 4, 37, "Input",ExpressionUUID->"13797ed6-5f74-4bb5-860b-6c33b7ebc909"],
+Cell[1161005, 24669, 537, 14, 42, "Output",ExpressionUUID->"44fb732e-57d8-48c1-8503-c041f0b68b47"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1101760, 23459, 473, 13, 37, "Input",ExpressionUUID->"8fbde2c7-9e59-44b3-b444-04c11858379d"],
-Cell[1102236, 23474, 890, 29, 42, "Output",ExpressionUUID->"153d8a48-712e-4648-b062-eb1107cb477d"]
+Cell[1161579, 24688, 170, 3, 37, "Input",ExpressionUUID->"c1f80156-8957-4086-b1cf-59fe883b15e4"],
+Cell[1161752, 24693, 1129, 24, 260, "Output",ExpressionUUID->"4cef5114-5d76-4f14-98d0-7aec3865c68a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1162918, 24722, 473, 13, 37, "Input",ExpressionUUID->"8fbde2c7-9e59-44b3-b444-04c11858379d"],
+Cell[1163394, 24737, 890, 29, 42, "Output",ExpressionUUID->"153d8a48-712e-4648-b062-eb1107cb477d"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1103175, 23509, 173, 3, 45, "Subsubsection",ExpressionUUID->"64af274a-7c95-4d56-9d89-b3e31638383f"],
+Cell[1164333, 24772, 173, 3, 45, "Subsubsection",ExpressionUUID->"64af274a-7c95-4d56-9d89-b3e31638383f"],
 Cell[CellGroupData[{
-Cell[1103373, 23516, 237, 3, 37, "Input",ExpressionUUID->"bd9262bb-5ca0-4621-bcf0-0598a7022976"],
-Cell[1103613, 23521, 7784, 192, 47, "Output",ExpressionUUID->"9f6d6a74-1829-4bce-8468-2ee2db726746"]
+Cell[1164531, 24779, 237, 3, 37, "Input",ExpressionUUID->"bd9262bb-5ca0-4621-bcf0-0598a7022976"],
+Cell[1164771, 24784, 7784, 192, 47, "Output",ExpressionUUID->"9f6d6a74-1829-4bce-8468-2ee2db726746"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1111434, 23718, 239, 4, 37, "Input",ExpressionUUID->"7b2e1fce-ac72-4c12-8b1c-cfacec4094de"],
-Cell[1111676, 23724, 433, 10, 35, "Message",ExpressionUUID->"3ab36d9a-24f1-420e-b992-f171f16ef7b0"],
-Cell[1112112, 23736, 182, 3, 42, "Output",ExpressionUUID->"eeeda3bc-3151-44f5-a2a7-8ad7d33c7967"]
+Cell[1172592, 24981, 239, 4, 37, "Input",ExpressionUUID->"7b2e1fce-ac72-4c12-8b1c-cfacec4094de"],
+Cell[1172834, 24987, 433, 10, 35, "Message",ExpressionUUID->"3ab36d9a-24f1-420e-b992-f171f16ef7b0"],
+Cell[1173270, 24999, 182, 3, 42, "Output",ExpressionUUID->"eeeda3bc-3151-44f5-a2a7-8ad7d33c7967"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1112331, 23744, 274, 6, 37, "Input",ExpressionUUID->"209d1769-10ff-4f2a-93a5-4fd0ef759d9d"],
-Cell[1112608, 23752, 439, 10, 35, "Message",ExpressionUUID->"8f0b7ace-3529-4020-9c9e-b1b5b0f0e1dc"],
-Cell[1113050, 23764, 181, 3, 42, "Output",ExpressionUUID->"1c65a0ef-5ae3-42ab-b147-3a244f79737f"]
+Cell[1173489, 25007, 274, 6, 37, "Input",ExpressionUUID->"209d1769-10ff-4f2a-93a5-4fd0ef759d9d"],
+Cell[1173766, 25015, 439, 10, 35, "Message",ExpressionUUID->"8f0b7ace-3529-4020-9c9e-b1b5b0f0e1dc"],
+Cell[1174208, 25027, 181, 3, 42, "Output",ExpressionUUID->"1c65a0ef-5ae3-42ab-b147-3a244f79737f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1113268, 23772, 2333, 60, 43, "Input",ExpressionUUID->"2f0b7135-9eab-4a66-987e-b13fa9804290"],
-Cell[1115604, 23834, 2376, 61, 48, "Output",ExpressionUUID->"5a2a23b0-a3d7-4cde-80ba-9be43ec660a6"]
+Cell[1174426, 25035, 2333, 60, 43, "Input",ExpressionUUID->"2f0b7135-9eab-4a66-987e-b13fa9804290"],
+Cell[1176762, 25097, 2376, 61, 48, "Output",ExpressionUUID->"5a2a23b0-a3d7-4cde-80ba-9be43ec660a6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1118017, 23900, 225, 5, 37, "Input",ExpressionUUID->"cfe10ac8-b7a3-486a-a6c4-b9cbcc0dca74"],
-Cell[1118245, 23907, 439, 10, 35, "Message",ExpressionUUID->"8961f2cd-219f-4456-a8e0-c2edf72907df"],
-Cell[1118687, 23919, 185, 3, 42, "Output",ExpressionUUID->"061e4247-2c30-4ba0-970b-3f8b55d21e46"]
+Cell[1179175, 25163, 225, 5, 37, "Input",ExpressionUUID->"cfe10ac8-b7a3-486a-a6c4-b9cbcc0dca74"],
+Cell[1179403, 25170, 439, 10, 35, "Message",ExpressionUUID->"8961f2cd-219f-4456-a8e0-c2edf72907df"],
+Cell[1179845, 25182, 185, 3, 42, "Output",ExpressionUUID->"061e4247-2c30-4ba0-970b-3f8b55d21e46"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1118909, 23927, 248, 5, 37, "Input",ExpressionUUID->"5ff5d0b7-d58f-4d08-a6d7-459aa9a1704c"],
-Cell[1119160, 23934, 21175, 372, 63, "Output",ExpressionUUID->"147a2a93-f3e6-451d-864b-c8ca58e40837"]
+Cell[1180067, 25190, 248, 5, 37, "Input",ExpressionUUID->"5ff5d0b7-d58f-4d08-a6d7-459aa9a1704c"],
+Cell[1180318, 25197, 21175, 372, 63, "Output",ExpressionUUID->"147a2a93-f3e6-451d-864b-c8ca58e40837"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1140372, 24311, 315, 6, 37, "Input",ExpressionUUID->"7be33ba9-91f5-4f26-9d4f-e7e02e5909fc"],
-Cell[1140690, 24319, 2376, 61, 48, "Output",ExpressionUUID->"543e1a88-d4ce-4a06-9058-60d019702457"]
+Cell[1201530, 25574, 315, 6, 37, "Input",ExpressionUUID->"7be33ba9-91f5-4f26-9d4f-e7e02e5909fc"],
+Cell[1201848, 25582, 2376, 61, 48, "Output",ExpressionUUID->"543e1a88-d4ce-4a06-9058-60d019702457"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1143103, 24385, 307, 6, 37, "Input",ExpressionUUID->"efca6d74-3dfb-4b5e-8530-87afd0dc1ed1"],
-Cell[1143413, 24393, 2321, 58, 48, "Output",ExpressionUUID->"6edbb28e-3fe3-4eb6-8d93-2f9c381fee6e"],
-Cell[1145737, 24453, 160, 3, 42, "Output",ExpressionUUID->"d0105861-dc2a-4ed0-9a14-597ac9c43d24"]
+Cell[1204261, 25648, 307, 6, 37, "Input",ExpressionUUID->"efca6d74-3dfb-4b5e-8530-87afd0dc1ed1"],
+Cell[1204571, 25656, 2321, 58, 48, "Output",ExpressionUUID->"6edbb28e-3fe3-4eb6-8d93-2f9c381fee6e"],
+Cell[1206895, 25716, 160, 3, 42, "Output",ExpressionUUID->"d0105861-dc2a-4ed0-9a14-597ac9c43d24"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1145934, 24461, 2502, 62, 47, "Input",ExpressionUUID->"bf356b5a-fdf1-4494-9128-8ba2efef8722"],
-Cell[1148439, 24525, 457, 10, 52, "Output",ExpressionUUID->"ea36d8ff-340a-4c4f-8572-421047521ec1"]
+Cell[1207092, 25724, 2502, 62, 47, "Input",ExpressionUUID->"bf356b5a-fdf1-4494-9128-8ba2efef8722"],
+Cell[1209597, 25788, 457, 10, 52, "Output",ExpressionUUID->"ea36d8ff-340a-4c4f-8572-421047521ec1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1148933, 24540, 2546, 63, 47, "Input",ExpressionUUID->"14a4447d-27eb-4a06-abf3-cf53d51a1b00"],
-Cell[1151482, 24605, 416, 10, 52, "Output",ExpressionUUID->"c0147a40-c15c-4d35-9022-bd380c61f08c"]
+Cell[1210091, 25803, 2546, 63, 47, "Input",ExpressionUUID->"14a4447d-27eb-4a06-abf3-cf53d51a1b00"],
+Cell[1212640, 25868, 416, 10, 52, "Output",ExpressionUUID->"c0147a40-c15c-4d35-9022-bd380c61f08c"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[1151947, 24621, 163, 3, 45, "Subsubsection",ExpressionUUID->"e2dbf4f9-a6e6-4a60-be96-4c34f702505e"],
-Cell[1152113, 24626, 2340, 51, 584, "Input",ExpressionUUID->"acd22277-7873-46c4-8d38-bf2acc63dbf6"],
+Cell[1213105, 25884, 163, 3, 45, "Subsubsection",ExpressionUUID->"e2dbf4f9-a6e6-4a60-be96-4c34f702505e"],
+Cell[1213271, 25889, 2340, 51, 584, "Input",ExpressionUUID->"acd22277-7873-46c4-8d38-bf2acc63dbf6"],
 Cell[CellGroupData[{
-Cell[1154478, 24681, 670, 17, 37, "Input",ExpressionUUID->"29078d9f-77d2-4b29-a81b-2f1ec72275e8"],
-Cell[1155151, 24700, 309, 6, 42, "Output",ExpressionUUID->"352d192b-aa8c-49d4-af9b-63a5e5613a0a"]
+Cell[1215636, 25944, 670, 17, 37, "Input",ExpressionUUID->"29078d9f-77d2-4b29-a81b-2f1ec72275e8"],
+Cell[1216309, 25963, 309, 6, 42, "Output",ExpressionUUID->"352d192b-aa8c-49d4-af9b-63a5e5613a0a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1155497, 24711, 2762, 70, 43, "Input",ExpressionUUID->"c9f900f5-ca04-44dd-933a-2becbc7b260b"],
-Cell[1158262, 24783, 279, 7, 42, "Output",ExpressionUUID->"f58d8b65-c6b0-45ef-a31d-a13e41fd67c2"]
+Cell[1216655, 25974, 2762, 70, 43, "Input",ExpressionUUID->"c9f900f5-ca04-44dd-933a-2becbc7b260b"],
+Cell[1219420, 26046, 279, 7, 42, "Output",ExpressionUUID->"f58d8b65-c6b0-45ef-a31d-a13e41fd67c2"]
 }, Open  ]]
 }, Open  ]],
-Cell[1158568, 24794, 160, 3, 56, "Subsubsection",ExpressionUUID->"b6423285-38e5-404e-ae50-a7a984346110"]
+Cell[1219726, 26057, 160, 3, 56, "Subsubsection",ExpressionUUID->"b6423285-38e5-404e-ae50-a7a984346110"]
 }, Open  ]]
 }
 ]
